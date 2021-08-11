@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
-import Team from '@/components/sections/Team'
-import TeamMember from '@/components/sections/TeamMember'
+// import Team from '@/components/sections/Team'
+// import TeamMember from '@/components/sections/TeamMember'
 import ConsultantTeam from '@/components/sections/ConsultantTeam'
 const Equipo = () => {
   return(
