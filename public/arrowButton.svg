@@ -1,0 +1,16 @@
+<svg id="arrowButton" data-name="arrowButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e47b7"/>
+      <stop offset="1" stop-color="#231c9c"/>
+    </linearGradient>
+  </defs>
+  <g id="Elipse_128" data-name="Elipse 128" fill="#fff" stroke="#3d36ac" stroke-width="4">
+    <circle cx="15" cy="15" r="15" stroke="none"/>
+    <circle cx="15" cy="15" r="13.5" fill="none"/>
+  </g>
+  <g id="chevron_right-24px" transform="translate(2.708 3)">
+    <path id="Trazado_13" data-name="Trazado 13" d="M10.029,6,8.59,7.439l4.675,4.686L8.59,16.811l1.439,1.439,6.125-6.125Z" transform="translate(0.179 0.125)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_14" data-name="Trazado 14" d="M0,0H24.5V24.5H0Z" fill="none"/>
+  </g>
+</svg>

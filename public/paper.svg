@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.682" height="113.771" viewBox="0 0 108.682 113.771">
+  <g id="Grupo_27" data-name="Grupo 27" transform="translate(-212.906 -241)">
+    <g id="Rectángulo_169" data-name="Rectángulo 169" transform="matrix(0.875, -0.485, 0.485, 0.875, 212.906, 275.336)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="70.825" height="90.822" stroke="none"/>
+      <rect x="1.5" y="1.5" width="67.825" height="87.822" fill="none"/>
+    </g>
+    <g id="Polígono_2" data-name="Polígono 2" transform="matrix(-0.899, -0.438, 0.438, -0.899, 297.286, 322.088)" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1.366,2.566a1.643,1.643,0,0,1,2.868,0h0A1.643,1.643,0,0,1,2.8,5.01h0A1.643,1.643,0,0,1,1.366,2.566Z" stroke="none"/>
+      <path d="M 2.799590587615967 1.724599361419678 C 3.359822988510132 1.724599361419678 3.92005181312561 2.005030632019043 4.233476638793945 2.565895795822144 L 4.233476638793945 2.565905570983887 C 4.845326900482178 3.66079568862915 4.053846836090088 5.009785652160645 2.799586772918701 5.009785652160645 C 1.545326709747314 5.009785652160645 0.7538466453552246 3.660805702209473 1.365696907043457 2.565905570983887 C 1.679121732711792 2.005035877227783 2.239357948303223 1.724599361419678 2.799590587615967 1.724599361419678 Z" stroke="none" fill="#4e47b7"/>
+    </g>
+    <g id="Rectángulo_171" data-name="Rectángulo 171" transform="matrix(0.883, 0.469, -0.469, 0.883, 303.001, 296.536)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="8.251" height="22.102" rx="4.126" stroke="none"/>
+      <rect x="1.5" y="1.5" width="5.251" height="19.102" rx="2.626" fill="none"/>
+    </g>
+    <g id="Rectángulo_172" data-name="Rectángulo 172" transform="matrix(0.883, 0.469, -0.469, 0.883, 314.646, 279.03)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="4.42" height="3.831" rx="1.916" stroke="none"/>
+      <rect x="1.5" y="1.5" width="1.42" height="0.831" rx="0.416" fill="none"/>
+    </g>
+    <g id="Rectángulo_170" data-name="Rectángulo 170" transform="matrix(0.883, 0.469, -0.469, 0.883, 310.815, 279.33)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+      <rect width="10.609" height="26.817" rx="5.304" stroke="none"/>
+      <rect x="1.5" y="1.5" width="7.609" height="23.817" rx="3.804" fill="none"/>
+    </g>
+    <path id="Trazado_78" data-name="Trazado 78" d="M0,.009,10.353,0" transform="matrix(0.883, 0.469, -0.469, 0.883, 306.744, 287.335)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+    <path id="Trazado_79" data-name="Trazado 79" d="M0,.012H1.347s.679-.151.6.6,0,17.581,0,17.581" transform="matrix(0.883, 0.469, -0.469, 0.883, 317.827, 288.543)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Línea_8" data-name="Línea 8" x2="49.994" transform="translate(229.665 285.128) rotate(-30)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+    <line id="Línea_9" data-name="Línea 9" x2="49.994" transform="translate(235.498 295.23) rotate(-30)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+    <line id="Línea_10" data-name="Línea 10" x2="49.994" transform="translate(241.33 305.333) rotate(-30)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+    <line id="Línea_11" data-name="Línea 11" x2="49.994" transform="translate(247.163 315.435) rotate(-30)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+    <line id="Línea_12" data-name="Línea 12" x2="49.994" transform="translate(252.995 325.538) rotate(-30)" fill="none" stroke="#4e47b7" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
