@@ -15,7 +15,7 @@ const RoutesNavbar = () => {
 							<LinkActive href="/" title="Home" />
 						</div>
 						<div className={classes.route}>
-							<LinkActive href="/actualidad" title="Actualidad Actual" />
+							<LinkActive href="/actualidad" title="Actualidad Legal" />
 						</div>
 						<div className={classes.route}>
 							<LinkActive href="/areas" title="Areas de practica" />
@@ -38,7 +38,7 @@ const RoutesNavbar = () => {
 							<LinkActive href="/" title="Home" />
 						</div>
 						<div className={classes.routeMobile}>
-							<LinkActive href="/actualidad" title="Actualidad Actual" />
+							<LinkActive href="/actualidad" title="Actualidad Legal" />
 						</div>
 						<div className={classes.routeMobile}>
 							<LinkActive href="/areas" title="Areas de practica" />

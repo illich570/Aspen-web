@@ -6,6 +6,12 @@ query Article($slug: String!){
     image{
       url
     }
+    content{
+      html
+    }
+    noteContent{
+      html
+    }
   }
   articles(where: {url_not : $slug}){
     image{
@@ -13,6 +19,13 @@ query Article($slug: String!){
     }
     url
     title
+  }
+  presentSections{
+    id
+    title
+    iconArticle{
+      url
+    }
   }
 }`
 

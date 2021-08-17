@@ -5,9 +5,12 @@ const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 		display: 'flex',
 		marginTop: '8em',
-		paddingLeft: '9em',
-		paddingRight: '9em',
+		padding: '0 9em',
 		flexDirection: 'column',
+		[theme.breakpoints.down('sm')]:{
+			width: '100%',
+			padding: '0 4.5em'
+		},
 	},
 	title: {
 		fontSize: '2em',
@@ -50,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.03em',
 		fontWeight: 'bold',
 		color: '#6e6e6e',
+		[theme.breakpoints.down('sm')]:{
+			width: '100%'
+		},
 	},
 	titleArticle: {
 		color: theme.palette.primary.main,
@@ -58,7 +64,8 @@ const useStyles = makeStyles((theme) => ({
 		marginBottom: '1.5em',
 	},
 	spaceArticles:{
-		marginTop: '4em'
+		marginTop: '4em',
+		marginBottom: '2em'
 	},
 	containerButton:{
 		width: '100%',
@@ -69,7 +76,18 @@ const useStyles = makeStyles((theme) => ({
 	button: {
 		width: '40%',
 		display: 'flex',
-		justifyContent: 'flex-end'
+		justifyContent: 'flex-end',
+		[theme.breakpoints.down('sm')]:{
+			width: '60%'
+		},
+	},
+	richTextNote:{
+		marginTop: '2em'
+	},
+	imageMobile:{
+		position: 'relative',
+		width: '100%',
+		marginRight: '1.5em'
 	}
 }))
 export default useStyles

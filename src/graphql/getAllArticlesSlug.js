@@ -1,6 +1,6 @@
 const getAllArticlesSlug = `
 {
-  articles{
+  articles(orderBy: order_ASC){
     url
   }
 }`

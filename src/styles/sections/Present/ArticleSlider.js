@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
 		position: 'absolute',
 		top: '5px',
 		left: '10px',
-		fontSize: '0.8em',
+		fontSize: '0.7em',
 		color: '#fff'
 	},
 	container: {
@@ -21,6 +21,11 @@ const useStyles = makeStyles(() => ({
 	containerSlider: {
 		width: '100%',
 	},
+	imageMobile:{
+		position: 'relative',
+		width: '100%',
+		marginRight: '1.5em'
+	}
 }))
 
 export default useStyles
