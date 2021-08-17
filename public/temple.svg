@@ -1,0 +1,30 @@
+<svg id="Componente_2_1" data-name="Componente 2 – 1" xmlns="http://www.w3.org/2000/svg" width="61" height="58" viewBox="0 0 61 58">
+  <g id="Polígono_4" data-name="Polígono 4" transform="translate(1)" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 51.29790878295898 18 L 6.702089786529541 18 C 6.010660171508789 18 5.793829917907715 17.45346069335938 5.743850231170654 17.28595924377441 C 5.693860054016113 17.11845016479492 5.575709819793701 16.54245948791504 6.154069900512695 16.16353988647461 L 28.45198059082031 1.554559826850891 C 28.61527061462402 1.447579741477966 28.80477905273438 1.391029834747314 29 1.391029834747314 C 29.19522094726562 1.391029834747314 29.38472938537598 1.447579741477966 29.54803085327148 1.554559826850891 L 51.84592819213867 16.16353988647461 C 52.42427825927734 16.54245948791504 52.3061408996582 17.11845016479492 52.25614929199219 17.28594970703125 C 52.20616149902344 17.45346069335938 51.98933029174805 18 51.29790878295898 18 Z" stroke="none"/>
+    <path d="M 29 2.391019821166992 L 6.702091217041016 17 L 51.29790115356445 17 L 29.00040054321289 2.391050338745117 C 29.0003604888916 2.39103889465332 29.00020980834961 2.391019821166992 29 2.391019821166992 M 29 0.3910255432128906 C 29.38161659240723 0.3910255432128906 29.76323509216309 0.5000495910644531 30.09605026245117 0.7180995941162109 L 52.39395141601562 15.32707977294922 C 54.05609130859375 16.41605949401855 53.28499984741211 19 51.29790115356445 19 L 6.702091217041016 19 C 4.714988708496094 19 3.94390869140625 16.41605949401855 5.606040954589844 15.32707977294922 L 27.90394973754883 0.7180995941162109 C 28.23676490783691 0.5000495910644531 28.61838340759277 0.3910255432128906 29 0.3910255432128906 Z" stroke="none" fill="#4e47b7"/>
+  </g>
+  <g id="Rectángulo_194" data-name="Rectángulo 194" transform="translate(8 21)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="8" height="21" stroke="none"/>
+    <rect x="1" y="1" width="6" height="19" fill="none"/>
+  </g>
+  <g id="Rectángulo_195" data-name="Rectángulo 195" transform="translate(20 21)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="8" height="21" stroke="none"/>
+    <rect x="1" y="1" width="6" height="19" fill="none"/>
+  </g>
+  <g id="Rectángulo_196" data-name="Rectángulo 196" transform="translate(32 21)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="8" height="21" stroke="none"/>
+    <rect x="1" y="1" width="6" height="19" fill="none"/>
+  </g>
+  <g id="Rectángulo_197" data-name="Rectángulo 197" transform="translate(44 21)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="8" height="21" stroke="none"/>
+    <rect x="1" y="1" width="6" height="19" fill="none"/>
+  </g>
+  <g id="Rectángulo_198" data-name="Rectángulo 198" transform="translate(5 43)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="49" height="7" stroke="none"/>
+    <rect x="1" y="1" width="47" height="5" fill="none"/>
+  </g>
+  <g id="Rectángulo_199" data-name="Rectángulo 199" transform="translate(0 51)" fill="#fff" stroke="#4e47b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <rect width="61" height="7" stroke="none"/>
+    <rect x="1" y="1" width="59" height="5" fill="none"/>
+  </g>
+</svg>
