@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
 		justifyContent: 'center',
 		paddingLeft: '9.5em',
 		paddingRight: '7em',
-    marginTop: '3em'
+    marginTop: '4em'
 	},
 	containerSection: {
 		height: '100%',
@@ -53,11 +53,14 @@ const useStyles = makeStyles(() => ({
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
 	},
-  containerImage:{
+  containerRow:{
     width: '100%',
     display: 'flex',
     justifyContent: 'center'
-  }
+  },
+	containerImage:{
+		marginRight:'2.6em'
+	}
 }))
 
 export default useStyles

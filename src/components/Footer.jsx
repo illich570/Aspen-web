@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 
 const Footer = () => {
+	const actualDate = new Date().getFullYear()
 	const classes = useStyles()
 	return (
 		<footer className={classes.container}>
@@ -22,7 +23,10 @@ const Footer = () => {
 				<Image alt="LinkedIn" height={100} src="/linkedInLogoWhite.svg" width={100} />
 			</div>
       <div className={classes.containerRow}>
-        <p>RIF. J-29839968-6 • Todos los derechos reservados 2016 • Fénix Media</p>
+        <p>Todos los derechos reservados {actualDate}.</p>
+      </div>
+			<div className={classes.containerRow}>
+			<Image alt="Banana Design" height={100} src="/bananaLogo.svg" width={150} />
       </div>
 		</footer>
 	)

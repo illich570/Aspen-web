@@ -2,9 +2,9 @@ import { Grid } from '@material-ui/core'
 import useStyles from '@/styles/sections/ConsultantTeam'
 
 
-const layout = [1, 2, 3]
-
-const ConsultantTeam = () => {
+const ConsultantTeam = ({dataTeam}) => {
+	//eslint-disable-next-line
+	console.log(dataTeam)
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>
@@ -23,21 +23,18 @@ const ConsultantTeam = () => {
 				</Grid>
 			</Grid>
 			<div className={classes.containerCards}>
-				{layout.map((element, index) => (
-					<article className={classes.card} key={`tu_mami_${index}`}>
+				{dataTeam.map((element) => (
+					<article className={classes.card} key={element.id}>
 						<div className={`${classes.containerImageSection}`}>
-							<img alt="" className={classes.image} src="/peopleCircle.png" />
+							<img alt={element.name} className={classes.image} src={element.image.url} />
 						</div>
 						<header className={classes.memberNameRow}>
-							<h3 className={classes.nameMember}>Paolo Longo</h3>
+							<h3 className={classes.nameMember}>{element.name}</h3>
 							<h3 className={classes.subtitleMember}>
-								Es nuestro abogado consultor en materia corporativa, laboral y litigio.
+								{element.description}
 							</h3>
 						</header>
-						<p className={classes.infoMember}>
-							Egresado cum laude de la Universidad Católica Andrés Bello en el año 2000 con Maestría
-							en tributación internacional de la Universidad de Nueva York.
-						</p>
+						<div className={classes.infoMember} dangerouslySetInnerHTML={{__html: element.resume.html}} />
 					</article>
 				))}
 			</div>

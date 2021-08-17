@@ -8,7 +8,7 @@ export default function SliderCard({ children,slidesToShow,dots }) {
 		dots: dots !== undefined ? dots : true,
 		slidesToShow: slidesToShow ? slidesToShow : 4,
 		prevArrow: <ArrowSlider />,
-		nextArrow: <ArrowSlider />,
+		nextArrow: <ArrowSlider isRight />,
 		pauseOnDotsHover: true,
 		pauseOnFocus: true,
 		responsive: [

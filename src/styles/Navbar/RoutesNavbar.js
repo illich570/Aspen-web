@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'row',
-		backgroundColor: 'white',
+		backgroundColor: '#F6F9FB',
 		borderRadius: '8px',
 		padding: '0.65em',
 		boxShadow: '0px 6px 15px rgba(0, 88, 82, 0.05)',
