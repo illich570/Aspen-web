@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 	card: {
 		display: 'flex',
 		minHeight: '380px',
-		width: '100%',
+		maxWidth: '400px',
 		background: 'white',
 		position: 'relative',
 		padding: '2.5em',

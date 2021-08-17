@@ -1,12 +1,25 @@
 import Layout from '@/components/Layout'
 import LegalTech from '@/components/sections/LegalTech'
-const Legal = () => {
+import { GraphClient } from '@/lib'
+import {getAllTechAreas} from '@/graphql'
+const Legal = ({techSections, techAreas}) => {
   return(
     <Layout blackColor titleHead="Aspen Actualidad">
-      <LegalTech/>
+      <LegalTech dataTechAreas={techAreas} dataTechSection={techSections} />
     </Layout>
   )
 }
 
 
 export default Legal
+
+export async function getStaticProps() {
+
+	const { techSections,techAreas } = await GraphClient.request(getAllTechAreas)
+	return {
+		props: {
+			techSections,
+			techAreas
+		},
+	}
+}

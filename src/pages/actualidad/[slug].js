@@ -26,8 +26,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params}) => {
   const slug = params.slug
   const data = await GraphClient.request(getArticle,{slug})
-  //eslint-disable-next-line
-  console.log(data);
 
 
   if (!data.article) {

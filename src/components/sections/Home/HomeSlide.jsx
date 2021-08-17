@@ -2,8 +2,7 @@ import { Grid } from '@material-ui/core'
 import Image from 'next/image'
 import useStyles from '@/styles/sections/Home/HomeSlide'
 
-
-const HomeSlide = ({data}) => {
+const HomeSlide = ({ data }) => {
 	const classes = useStyles(data)
 	return (
 		<>
@@ -20,17 +19,14 @@ const HomeSlide = ({data}) => {
 						<Grid className={classes.containerInfo} item md={6}>
 							<div className={classes.containerText}>
 								<h1 className={classes.title}>{data.title}</h1>
-								<p className={classes.paragraph}>
-									{data.description}
-								</p>
+								<p className={classes.paragraph}>{data.description}</p>
 							</div>
 							<div className={classes.containerIcons}>
-								<div className={classes.containerArrow}>
-									<Image alt="Next" height={100} src="/filledArrow.svg" width={100} />
-								</div>
-								<div className={classes.containerLinkedIn}>
-									<Image alt="LinkedIn" height={50} src={data.icon.url} width={100} />
-								</div>
+								<a  href={data.iconUrl} rel="noreferrer noopener" target="_blank"  >
+									<div className={classes.containerLinkedIn}>
+										<Image alt="LinkedIn" height={50} src={data.icon.url} width={100} />
+									</div>
+								</a>
 							</div>
 						</Grid>
 					</Grid>

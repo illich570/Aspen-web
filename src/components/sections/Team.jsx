@@ -1,11 +1,8 @@
 import { Grid } from '@material-ui/core'
 import useStyles from '@/styles/sections/Team'
+import Link from 'next/link'
 
-
-const layout = [1, 2, 3, 4, 5]
-const layout2 = [1, 2, 3]
-
-const Team = () => {
+const Team = ({ dataConsultant, dataTeam }) => {
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>
@@ -22,13 +19,18 @@ const Team = () => {
 				<Grid className={classes.containerSectionTeam} item md={12}>
 					<section>
 						<div className={classes.sectionTeam}>
-							{layout.map((element, index) => (
-								<div className={classes.containerTeam} key={`tu_mama_${index}`}>
+							{dataTeam.map((element) => (
+								<div className={classes.containerTeam} key={element.id}>
+									<Link href={`equipo/${element.slug}`} passHref>
+									<a style={{display: 'contents'}}>
 									<div className={`${classes.containerImageSection}`}>
-										<img alt="" className={classes.image} src="/peopleCircle.png" />
+										<img alt={element.name} className={classes.image} src={element.image.url} />
 									</div>
-									<h5 className={classes.nameTeam}>Juan Manuel Santana</h5>
+									<h5 className={classes.nameTeam}>{element.name}</h5>
+									</a>
+									</Link>
 								</div>
+									
 							))}
 						</div>
 					</section>
@@ -40,20 +42,20 @@ const Team = () => {
 						</Grid>
 						<Grid item md={9}>
 							<section>
+							<Link href={`equipo/consultores`} passHref>
+								<a>
 								<div className={classes.sectionTeam}>
-									{layout2.map((element, index) => (
-										<div className={classes.containerTeam} key={`tu_mama_2_${index}`}>
+									{dataConsultant.map((element) => (
+										<div className={classes.containerTeam} key={element.id}>
 											<div className={`${classes.containerImageSection}`}>
-												<img
-													alt=""
-													className={classes.image}
-													src="/peopleCircle.png"
-												/>
+												<img alt={element.name} className={classes.image} src={element.image.url} />
 											</div>
-											<h5 className={classes.nameTeam}>Juan Manuel Santana</h5>
+											<h5 className={classes.nameTeam}>{element.name}</h5>
 										</div>
 									))}
 								</div>
+								</a>
+								</Link>
 							</section>
 						</Grid>
 					</Grid>

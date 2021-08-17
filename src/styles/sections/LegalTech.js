@@ -2,12 +2,21 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
 	container: {
 		width: '100%',
+		minHeight: '84vh',
 		position: 'relative',
 		display: 'flex',
-		marginTop: '10em',
+		marginTop: '8em',
 		paddingLeft: '9em',
 		paddingRight: '9em',
 		flexDirection: 'column',
+		backgroundImage: 'url(/fondo.png)',
+		backgroundSize: 'cover',
+		backgroundRepeat: 'no-repeat',
+		backgroundPosition: 'center center',
+		backgroundAttachment: 'fixed',
+	},
+	containerGrid:{
+		paddingTop: '2em'
 	},
 	title: {
 		fontSize: '3em',
@@ -49,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 		color: '#707070',
 	},
 	list: {
-		width: '80%',
+		width: '35%',
 		marginLeft: '2em',
 		marginTop: '2.5em',
 	},
@@ -84,6 +93,18 @@ const useStyles = makeStyles((theme) => ({
 	containerSectionTitle: {
 		paddingLeft: '6em',
 	},
+	richText:{
+		'& > p':{
+			marginBottom: '0.7em',
+		},
+		'& > ul':{
+			listStyle: 'initial',
+			marginLeft:'1.5em',
+		},
+		'& > li':{
+			listStyle: 'initial',
+		}
+	}
 }))
 
 export default useStyles

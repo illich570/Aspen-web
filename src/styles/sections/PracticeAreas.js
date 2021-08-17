@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	sectionInfo: {
-		background: 'white',
+		backgroundColor: '#F6F9FB',
 		boxShadow: '2px 6px 29px rgba(0, 0, 0, 0.1)',
 		borderRadius: '24px',
 		minHeight: '300px',
@@ -133,13 +133,18 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paragraphSection: {
 		letterSpacing: '0.06em',
-		marginBottom: '2em'
+		marginBottom: '2em',
+		'& > p':{
+			'&:not(:last-child)': {
+				marginBottom: '0.7em'
+			},
+		}
 	},
 	imagesSectionRow: {
 		position: 'absolute',
 		width: '43%',
 		bottom: 0,
-		height: '4vh',
+		height: '5.5vh',
 		display: 'flex',
 		justifyContent: 'flex-end',
 		[theme.breakpoints.down('xs')]:{
@@ -184,7 +189,7 @@ const useStyles = makeStyles((theme) => ({
 			right: '0',
 			borderStyle: 'solid',
 			borderWidth: '30px 15px 15px 15px',
-			borderColor: 'white transparent transparent transparent',
+			borderColor: '#F6F9FB transparent transparent transparent',
 			transform: 'rotate(90deg)',
 		},
 		[theme.breakpoints.down('sm')]:{

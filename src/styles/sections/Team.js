@@ -4,9 +4,8 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		position: 'relative',
 		display: 'flex',
-		marginTop: '10em',
-		paddingLeft: '9em',
-		paddingRight: '9em',
+		marginTop: '9em',
+		padding: '0 9em',
 		flexDirection: 'column',
 	},
 	title: {
@@ -46,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 		top: '-85px',
 	},
 	containerSectionTeam: {
-		marginTop: '5em',
+		marginTop: '6em',
 	},
 	image: {
 		position: 'absolute',

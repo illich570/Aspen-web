@@ -4,9 +4,8 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		position: 'relative',
 		display: 'flex',
-		marginTop: '9em',
-		paddingLeft: '9em',
-		paddingRight: '9em',
+		marginTop: '8em',
+		padding: '0 9em',
 		flexDirection: 'column',
 	},
 	title: {
@@ -31,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.04em',
 		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
 		color: theme.palette.primary.main,
-		marginTop: '1em',
+		marginTop: '0.5em',
+		marginBottom: '1.5em'
 	},
 	paragraph: {
 		letterSpacing: '0.06em',
@@ -99,7 +99,8 @@ const useStyles = makeStyles((theme) => ({
 		height: '100%',
 		letterSpacing: '0.09em',
 		color: '#666',
-		marginTop: '1em'
+		marginTop: '1em',
+		lineHeight: '30px'
 	},
 }))
 
