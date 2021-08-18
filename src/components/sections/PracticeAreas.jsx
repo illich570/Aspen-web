@@ -10,6 +10,8 @@ const PracticeAreas = ({dataAreas, dataAreaSection}) => {
 
 	const handleSelectedList = (selected) => {
 		const result = dataAreas.find((element) => element.id === selected)
+		//eslint-disable-next-line
+		console.log(result)
 		setSelectedList(result)
 		setIsFade(false)
 	}
@@ -74,15 +76,14 @@ const PracticeAreas = ({dataAreas, dataAreaSection}) => {
 								<div className={classes.paragraphSection} dangerouslySetInnerHTML={{ __html: selectedList.content.html}}/>
 							</section>
 							<div className={classes.imagesSectionRow}>
-								<div className={`${classes.containerImageSection}`}>
-									<img alt="" className={classes.image} src="/peopleCircle.png" />
-								</div>
-								<div className={`${classes.containerImageSection}`}>
-									<img alt="" className={classes.image} src="/peopleCircle.png" />
-								</div>
-								<div className={`${classes.containerImageSection}`}>
-									<img alt="" className={classes.image} src="/peopleCircle.png" />
-								</div>
+								{
+									selectedList.memberArea.length > 0 ?
+									selectedList.memberArea.map((element,index) => (
+										<div className={`${classes.containerImageSection}`} key={`${index}_member`}>
+										<img alt="" className={classes.image} src={element.url} />
+									</div>
+									)) : null
+								}
 							</div>
 						</article>
 					</Grid>

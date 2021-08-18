@@ -2,11 +2,16 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
 	container: {
 		width: '100%',
-		position: 'relative',
 		display: 'flex',
-		marginTop: '10em',
+		marginTop: '8.4em',
 		padding: '0 9em',
 		flexDirection: 'column',
+		minHeight: '83.5vh',
+		backgroundImage: 'url(/fondo.png)',
+		backgroundSize: 'cover',
+		backgroundRepeat: 'no-repeat',
+		backgroundPosition: 'center center',
+		backgroundAttachment: 'fixed',
 		[theme.breakpoints.down('sm')]:{
 			padding: '0 4em'
 		},
@@ -107,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
 		padding: '2em 4em',
 		opacity: 0,
 		transition: 'all 0.5s',
+		position: 'relative',
 		[theme.breakpoints.down('xs')]:{
 			padding: '1em 2em'
 		},
@@ -142,7 +148,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	imagesSectionRow: {
 		position: 'absolute',
-		width: '43%',
+		width: '87%',
 		bottom: 0,
 		height: '5.5vh',
 		display: 'flex',

@@ -9,6 +9,9 @@ const getAllAreas = `
     icon{
       url
     }
+    memberArea{
+      url
+    }
   }
   practiceSections(first: 1){
     title
