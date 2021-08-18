@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 	link: {
 		color: 'white',
 		fontWeight: '500',
-		marginLeft: '2.3em'
 	},
 	containerRow: {
 		display: 'flex',

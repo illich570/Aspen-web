@@ -1,33 +1,42 @@
 import useStyles from '@/styles/Footer'
 import Aspen from '@/components/Aspen'
 import Image from 'next/image'
+import Link from 'next/link'
 
-
-
-const Footer = () => {
+const Footer = ({ routes, dataFooter }) => {
 	const actualDate = new Date().getFullYear()
 	const classes = useStyles()
+	const data = dataFooter[0]
 	return (
 		<footer className={classes.container}>
 			<div className={classes.containerLogo}>
 				<Aspen />
 			</div>
 			<div className={classes.rowLinks}>
-				<h5 className={classes.link}>Servicios</h5>
-				<h5 className={classes.link}>Equipo</h5>
-				<h5 className={classes.link}>Contacto</h5>
-				<h5 className={classes.link}>Legal Tech</h5>
-				<h5 className={classes.link}>Nosotros</h5>
+				{routes.map((route) => (
+					<Link href={route.route} key={route.id} passHref>
+						<a className={classes.link}>{route.title}</a>
+					</Link>
+				))}
 			</div>
 			<div className={classes.containerRow}>
-				<Image alt="LinkedIn" height={100} src="/linkedInLogoWhite.svg" width={100} />
+				<div>
+					<a href={data.urlLinkedin}  rel="noopener noreferrer" target="_blank">
+					<Image alt="LinkedIn" height={100} src={data.linkedinIcon.url} width={100} />
+					</a>
+				</div>
+				
 			</div>
-      <div className={classes.containerRow}>
-        <p>Todos los derechos reservados {actualDate}.</p>
-      </div>
 			<div className={classes.containerRow}>
-			<Image alt="Banana Design" height={100} src="/bananaLogo.svg" width={150} />
-      </div>
+				<p>
+					{data.copyright} {actualDate}.
+				</p>
+			</div>
+			{data.designLogo ? (
+				<div className={classes.containerRow}>
+					<Image alt="Banana Design" height={100} src={data.designLogo.url} width={150} />
+				</div>
+			) : null}
 		</footer>
 	)
 }

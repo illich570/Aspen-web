@@ -191,6 +191,7 @@ const useStyles = makeStyles((theme) => ({
 			borderWidth: '30px 15px 15px 15px',
 			borderColor: '#F6F9FB transparent transparent transparent',
 			transform: 'rotate(90deg)',
+			transition: 'all 0.5s',
 		},
 		[theme.breakpoints.down('sm')]:{
 			'&::after':{

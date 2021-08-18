@@ -40,7 +40,7 @@ const CustomTooltip = withStyles((theme) => ({
 }))(Tooltip)
 
 
-const Navbar = ({ blackColor }) => {
+const Navbar = ({ blackColor, routes}) => {
 	const classes = useStyles()
 	const [open, setOpen] = useState(false)
 	const [showSidebar, setShowSidebar] = useState(false)
@@ -73,7 +73,7 @@ const Navbar = ({ blackColor }) => {
 				<Grid item md={10} xs={6}>
 					<Hidden implementation="css" smDown>
 						<Grid container>
-							<RoutesNavbar />
+							<RoutesNavbar routes={routes} />
 							<Grid className={classes.container} item md={2}>
 								<div className={classes.container}>
 									<ClickAwayListener onClickAway={handleTooltipClose}>
@@ -129,7 +129,7 @@ const Navbar = ({ blackColor }) => {
 								direction="column"
 								justify="center"
 							>
-								<RoutesNavbar />
+								<RoutesNavbar routes={routes} />
 								<Button
 									className={classes.button}
 									color="primary"

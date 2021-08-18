@@ -1,12 +1,12 @@
 import Layout from '@/components/Layout'
 import TeamMember from '@/components/sections/TeamMember'
 import { GraphClient } from '@/lib'
-import {getAllMembersSlug, getMember} from '@/graphql'
+import {getAllMembersSlug, getMember, getAllRoutes} from '@/graphql'
 
 
-const Member = ({teamMember}) => {
+const Member = ({teamMember, routesNavbars}) => {
   return (
-    <Layout blackColor titleHead="Aspen Actualidad">
+    <Layout blackColor routes={routesNavbars} titleHead="Aspen Actualidad">
       <TeamMember dataMember={teamMember}/>
     </Layout>
   )
@@ -26,8 +26,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params}) => {
   const slug = params.slug
   const data = await GraphClient.request(getMember,{slug})
-  //eslint-disable-next-line
-  console.log(data)
+  const {routesNavbars} = await GraphClient.request(getAllRoutes)
 
 
   if (!data.teamMember) {
@@ -36,7 +35,7 @@ export const getStaticProps = async ({params}) => {
     };
   }
   return {
-    props: { teamMember: data},
+    props: { teamMember: data, routesNavbars},
     revalidate: 60 * 2, // Cache response for 1 hour (60 seconds * 60 minutes)
   };
 }

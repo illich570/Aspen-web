@@ -2,13 +2,13 @@ import Layout from '@/components/Layout'
 import International from '@/components/sections/International'
 import Footer from '@/components/Footer'
 import { GraphClient } from '@/lib'
-import {getInternationalSection} from '@/graphql'
+import {getInternationalSection, getAllRoutes, getFooterSection} from '@/graphql'
 
-const Internacional = ({internationalSections}) => {
+const Internacional = ({internationalSections, routesNavbars, footerSections}) => {
   return(
-    <Layout titleHead="Aspen Legal">
+    <Layout routes={routesNavbars} titleHead="Aspen Legal">
       <International dataSection={internationalSections}/>
-      <Footer/>
+      <Footer dataFooter={footerSections} routes={routesNavbars}/>
     </Layout>
   )
 }
@@ -19,9 +19,14 @@ export default Internacional
 export async function getStaticProps() {
 
 	const { internationalSections } = await GraphClient.request(getInternationalSection)
+  const {routesNavbars} = await GraphClient.request(getAllRoutes)
+  const {footerSections} = await GraphClient.request(getFooterSection)
+  
 	return {
 		props: {
-      internationalSections
+      internationalSections,
+      routesNavbars,
+      footerSections
 		},
 	}
 }

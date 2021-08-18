@@ -1,12 +1,12 @@
 import Layout from '@/components/Layout'
 import PresentPostLayout from '@/components/sections/Present/PresentPostLayout'
 import { GraphClient } from '@/lib'
-import {getAllArticlesSlug, getArticle} from '@/graphql'
+import {getAllArticlesSlug, getArticle, getAllRoutes} from '@/graphql'
 
 
-const Present = ({article}) => {
+const Present = ({article, routesNavbars}) => {
   return (
-    <Layout blackColor titleHead="Aspen Actualidad">
+    <Layout  blackColor routes={routesNavbars} titleHead="Aspen Actualidad">
       <PresentPostLayout dataArticle={article}/>
     </Layout>
   )
@@ -26,6 +26,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params}) => {
   const slug = params.slug
   const data = await GraphClient.request(getArticle,{slug})
+  const {routesNavbars} = await GraphClient.request(getAllRoutes)
 
 
   if (!data.article) {
@@ -34,7 +35,7 @@ export const getStaticProps = async ({params}) => {
     };
   }
   return {
-    props: { article: data},
+    props: { article: data, routesNavbars},
     revalidate: 60 * 2, // Cache response for 1 hour (60 seconds * 60 minutes)
   };
 }
