@@ -1,8 +1,7 @@
-
 import HomeSlide from '@/components/sections/Home/HomeSlide'
 import { useEmblaCarousel } from 'embla-carousel/react'
 
-const Home = ({dataHome}) => {
+const Home = ({ dataHome }) => {
 	const [emblaRef] = useEmblaCarousel({ axis: 'y', draggable: false })
 	return (
 		<div className="embla" ref={emblaRef}>

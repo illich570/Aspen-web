@@ -26,9 +26,9 @@ const useStyles = makeStyles(() => ({
 		top: '9px',
 		zIndex: '1',
 	},
-	containerDialog:{
-		padding: '1em'
-	}
+	containerDialog: {
+		padding: '1em',
+	},
 }))
 
 export default useStyles

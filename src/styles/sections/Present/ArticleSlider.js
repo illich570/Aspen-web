@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
 	containerImage: {
 		width: '80%',
 		margin: '0 auto',
-		position: 'relative'
+		position: 'relative',
 	},
 	title: {
 		position: 'absolute',
@@ -12,11 +12,11 @@ const useStyles = makeStyles((theme) => ({
 		left: '10px',
 		fontSize: '0.7em',
 		color: 'white',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			left: '0',
 			position: 'relative',
 			color: '#000',
-			marginBottom: '1em'
+			marginBottom: '1em',
 		},
 	},
 	container: {
@@ -26,19 +26,19 @@ const useStyles = makeStyles((theme) => ({
 	},
 	containerSlider: {
 		width: '100%',
-		[theme.breakpoints.down('sm')]:{
-			margin: '2em 0'
+		[theme.breakpoints.down('sm')]: {
+			margin: '2em 0',
 		},
 	},
-	imageMobile:{
+	imageMobile: {
 		position: 'relative',
 		width: '100%',
-		marginRight: '1.5em'
+		marginRight: '1.5em',
 	},
-	containerCardSlider:{
+	containerCardSlider: {
 		display: 'flex',
-		justifyContent: 'center'
-	}
+		justifyContent: 'center',
+	},
 }))
 
 export default useStyles

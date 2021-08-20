@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: 'rgba(255, 255, 255, 0.17)',
 		top: '-25%',
 		right: '-29%',
-		[theme.breakpoints.down('sm')]:{
-			display: 'none'
+		[theme.breakpoints.down('sm')]: {
+			display: 'none',
 		},
 	},
 	containerText: {
@@ -40,19 +40,19 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		paddingLeft: '9.5em',
 		paddingRight: '7em',
-    marginTop: '6em',
+		marginTop: '6em',
 		'@media (max-width: 1250px)': {
-			padding: "0 3em",
-			marginTop: '5em'
+			padding: '0 3em',
+			marginTop: '5em',
 		},
-		[theme.breakpoints.down('sm')]:{
-			padding: "0 2em"
+		[theme.breakpoints.down('sm')]: {
+			padding: '0 2em',
 		},
 	},
 	containerSection: {
 		height: '100%',
-		[theme.breakpoints.down('sm')]:{
-		 justifyContent: 'center'
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'center',
 		},
 	},
 	title: {
@@ -65,25 +65,25 @@ const useStyles = makeStyles((theme) => ({
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
-		'& > p':{
+		'& > p': {
 			marginBottom: '1em',
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
 	},
-  containerRow:{
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center'
-  },
-	containerImage:{
-		marginRight:'2.6em'
-	}
+	containerRow: {
+		width: '100%',
+		display: 'flex',
+		justifyContent: 'center',
+	},
+	containerImage: {
+		marginRight: '2.6em',
+	},
 }))
 
 export default useStyles

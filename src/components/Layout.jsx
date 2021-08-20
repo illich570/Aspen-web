@@ -7,7 +7,7 @@ export default function Layout({ children, titleHead, blackColor, routes, logos 
 			<Head>
 				<title>{titleHead}</title>
 			</Head>
-			<Navbar blackColor={blackColor}  logos={logos} routes={routes} />
+			<Navbar blackColor={blackColor} logos={logos} routes={routes} />
 			{children}
 		</>
 	)

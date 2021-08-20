@@ -14,15 +14,15 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
-		[theme.breakpoints.down('sm')]:{
-			padding: '0 4em'
+		[theme.breakpoints.down('sm')]: {
+			padding: '0 4em',
 		},
-		[theme.breakpoints.down('xs')]:{
-			padding: '0 2em'
-		}
+		[theme.breakpoints.down('xs')]: {
+			padding: '0 2em',
+		},
 	},
-	containerGrid:{
-		paddingTop: '2em'
+	containerGrid: {
+		paddingTop: '2em',
 	},
 	title: {
 		fontSize: '3em',
@@ -67,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
 		width: '35%',
 		marginLeft: '2em',
 		marginTop: '2.5em',
-		[theme.breakpoints.down('sm')]:{
-			width: '80%'
+		[theme.breakpoints.down('sm')]: {
+			width: '80%',
 		},
 	},
 	listItem: {
@@ -101,26 +101,25 @@ const useStyles = makeStyles((theme) => ({
 	},
 	containerSectionTitle: {
 		paddingLeft: '6em',
-		[theme.breakpoints.down('sm')]:{
-			paddingLeft:' 0.5em'
+		[theme.breakpoints.down('sm')]: {
+			paddingLeft: ' 0.5em',
 		},
 	},
-	richText:{
-		'& > p':{
+	richText: {
+		'& > p': {
 			marginBottom: '1em',
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
-		[theme.breakpoints.down('xs')]:{
-			marginBottom: '2em'
+		[theme.breakpoints.down('xs')]: {
+			marginBottom: '2em',
 		},
-
-	}
+	},
 }))
 
 export default useStyles

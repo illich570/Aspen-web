@@ -2,9 +2,7 @@ import LinkActive from '@/components/Navbar/LinkActive'
 import { Grid, Hidden } from '@material-ui/core'
 import useStyles from '@/styles/Navbar/RoutesNavbar'
 
-
 const RoutesNavbar = ({ routes }) => {
-
 	const classes = useStyles()
 	return (
 		<>

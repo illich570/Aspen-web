@@ -1,9 +1,7 @@
 import Slider from 'react-slick'
 import ArrowSlider from '@/components/ArrowSlider'
 
-
-
-export default function SliderCard({ children,slidesToShow,dots }) {
+export default function SliderCard({ children, slidesToShow, dots }) {
 	const settings = {
 		dots: dots !== undefined ? dots : true,
 		slidesToShow: slidesToShow ? slidesToShow : 4,

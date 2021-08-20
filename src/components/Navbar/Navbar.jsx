@@ -39,13 +39,12 @@ const CustomTooltip = withStyles((theme) => ({
 	},
 }))(Tooltip)
 
-
-const Navbar = ({ blackColor, routes, logos}) => {
+const Navbar = ({ blackColor, routes, logos }) => {
 	const classes = useStyles()
 	const [open, setOpen] = useState(false)
 	const [showSidebar, setShowSidebar] = useState(false)
 	const handleShowSidebar = () => setShowSidebar(!showSidebar)
-	const [showModal,setShowModal] = useState(false);
+	const [showModal, setShowModal] = useState(false)
 
 	const handleTooltipClose = () => {
 		setOpen(false)
@@ -55,13 +54,12 @@ const Navbar = ({ blackColor, routes, logos}) => {
 		setOpen(true)
 	}
 
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
+	const handleOpenModal = () => {
+		setShowModal(true)
+	}
+	const handleCloseModal = () => {
+		setShowModal(false)
+	}
 
 	const logoUrl = blackColor === true ? logos[0].darkLogo.url : logos[0].logo.url
 	return (
@@ -142,17 +140,21 @@ const Navbar = ({ blackColor, routes, logos}) => {
 								</Button>
 							</Grid>
 						</Drawer>
-						<Dialog aria-labelledby="customized-dialog-title" onClose={handleCloseModal} open={showModal} >
+						<Dialog
+							aria-labelledby="customized-dialog-title"
+							onClose={handleCloseModal}
+							open={showModal}
+						>
 							<DialogTitle>
-									Datos de Contacto
+								Datos de Contacto
 								<IconButton
-								aria-label="open drawer"
-								className={classes.closeButtonDrawer}
-								color="primary"
-								onClick={handleCloseModal}
-							>
-								<Close />
-							</IconButton>
+									aria-label="open drawer"
+									className={classes.closeButtonDrawer}
+									color="primary"
+									onClick={handleCloseModal}
+								>
+									<Close />
+								</IconButton>
 							</DialogTitle>
 							<DialogContent className={classes.containerDialog}>
 								<ContactTooltip />

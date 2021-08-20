@@ -35,7 +35,12 @@ const CardSlider = ({ dataArticles }) => {
 									<Link href={`/actualidad/${element.url}`} passHref>
 										<a>
 											<div className={classes.containerImage}>
-												<Image alt={element.title} height={100} src={element.image.url} width={100} />
+												<Image
+													alt={element.title}
+													height={100}
+													src={element.image.url}
+													width={100}
+												/>
 												<h5 className={classes.title}>{element.title}</h5>
 											</div>
 										</a>

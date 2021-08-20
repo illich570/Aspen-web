@@ -10,8 +10,11 @@ export default class MyDocument extends Document {
 				<Head>
 					<meta content={theme.palette.primary.main} name="theme-color" />
 					<link href="https://fonts.googleapis.com" rel="preconnect" />
-					<link  href="https://fonts.gstatic.com" rel="preconnect" usecrossorigin="true"  />	
-					<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet"/>
+					<link href="https://fonts.gstatic.com" rel="preconnect" usecrossorigin="true" />
+					<link
+						href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Montserrat:wght@300;500;600;700&display=swap"
+						rel="stylesheet"
+					/>
 					<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 					<link
 						charSet="UTF-8"
@@ -23,14 +26,13 @@ export default class MyDocument extends Document {
 						href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
 						rel="stylesheet"
 						type="text/css"
-						
 					/>
 					<link
 						as="font"
 						crossOrigin=""
 						href="/fonts/Trajan/TrajanPro-Regular.woff"
-            rel="preload"
-          />
+						rel="preload"
+					/>
 				</Head>
 				<body>
 					<Main />

@@ -6,12 +6,12 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		minHeight: '10vh',
 		flexDirection: 'column',
-    background: '#f0f0f0',
-    padding: '0.5em',
-    justifyContent: 'space-evenly',
-    borderRadius: '4px',
-		[theme.breakpoints.down('sm')]:{
-      fontSize: '0.8em'
+		background: '#f0f0f0',
+		padding: '0.5em',
+		justifyContent: 'space-evenly',
+		borderRadius: '4px',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '0.8em',
 		},
 	},
 	containerIcon: {
@@ -25,22 +25,22 @@ const useStyles = makeStyles((theme) => ({
 	containerGridIcon: {
 		justifyContent: 'center',
 		display: 'flex',
-    alignItems: 'center',
+		alignItems: 'center',
 	},
-  rowItem:{
-    margin: '0.5em 0',
-    display: 'flex',
-		[theme.breakpoints.down('sm')]:{
-      flexDirection: 'column'
+	rowItem: {
+		margin: '0.5em 0',
+		display: 'flex',
+		[theme.breakpoints.down('sm')]: {
+			flexDirection: 'column',
 		},
-  },
-  info:{
-		[theme.breakpoints.down('sm')]:{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
+	},
+	info: {
+		[theme.breakpoints.down('sm')]: {
+			display: 'flex',
+			justifyContent: 'center',
+			alignItems: 'center',
 		},
-  }
+	},
 }))
 
 export default useStyles

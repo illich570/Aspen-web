@@ -10,15 +10,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 	linkActive: {
 		color: theme.palette.primary.main,
-    position: 'relative',
-		"&::after":{
+		position: 'relative',
+		'&::after': {
 			content: '""',
 			display: 'block',
 			width: '0.5em',
 			height: '0.5em',
 			position: 'absolute',
 			bottom: -8,
-      left: '45%',
+			left: '45%',
 			borderRadius: '50%',
 			background: theme.palette.primary.main,
 			border: '1px solid #F5F5F5',

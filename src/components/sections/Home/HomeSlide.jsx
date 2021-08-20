@@ -22,7 +22,7 @@ const HomeSlide = ({ data }) => {
 								<p className={classes.paragraph}>{data.description}</p>
 							</div>
 							<div className={classes.containerIcons}>
-								<a  href={data.iconUrl} rel="noreferrer noopener" target="_blank"  >
+								<a href={data.iconUrl} rel="noreferrer noopener" target="_blank">
 									<div className={classes.containerLinkedIn}>
 										<Image alt="LinkedIn" height={50} src={data.icon.url} width={100} />
 									</div>

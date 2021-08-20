@@ -12,12 +12,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 			<Hidden implementation="css" smDown>
 				<div className={classes.containerTitle}>
 					<div className={classes.containerLogo}>
-						<Image
-							alt=""
-							height={100}
-							src={presentSections[0].iconArticle.url}
-							width={100}
-						/>
+						<Image alt="" height={100} src={presentSections[0].iconArticle.url} width={100} />
 					</div>
 					<div className={classes.containerText}>
 						<h3 className={classes.title}>{presentSections[0].title}</h3>
@@ -70,12 +65,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 				<Grid container>
 					<Grid item md={3}>
 						<div className={classes.imageMobile}>
-							<Image
-								alt=""
-								height={42}
-								src={presentSections[0].iconArticle.url}
-								width={42}
-							/>
+							<Image alt="" height={42} src={presentSections[0].iconArticle.url} width={42} />
 						</div>
 					</Grid>
 					<Grid item md={9}>
@@ -116,14 +106,13 @@ const PresentPostLayout = ({ dataArticle }) => {
 							</div>
 						</article>
 					</Grid>
-					<Grid item md={12} style={{width: '100%'}}>
-							<div className={classes.paragraphInterest}>
-								<p>Articulos que podrian ser de tu interes</p>
-							</div>
-							<div>
-								<ArticleSlider dataArticles={articles} />
-							</div>
-							
+					<Grid item md={12} style={{ width: '100%' }}>
+						<div className={classes.paragraphInterest}>
+							<p>Articulos que podrian ser de tu interes</p>
+						</div>
+						<div>
+							<ArticleSlider dataArticles={articles} />
+						</div>
 					</Grid>
 				</Grid>
 			</Hidden>

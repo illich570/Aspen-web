@@ -20,7 +20,7 @@ const LegalTech = ({ dataTechAreas, dataTechSection }) => {
 
 	return (
 		<div className={classes.container}>
-			<Grid  className={classes.containerGrid} container justify="space-between">
+			<Grid className={classes.containerGrid} container justify="space-between">
 				<Grid item md={5}>
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>

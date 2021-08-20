@@ -9,9 +9,8 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		minHeight: '80vh',
 		justifyContent: 'space-between',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			padding: '0 2em',
-
 		},
 	},
 	title: {
@@ -42,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		display: 'flex',
 		justifyContent: 'space-evenly',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			justifyContent: 'center',
-			flexWrap: 'wrap'
+			flexWrap: 'wrap',
 		},
 	},
 	card: {
@@ -58,9 +57,9 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0 0.5em',
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',
 		borderRadius: '25px',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			marginTop: '9em',
-			marginBottom: '2em'
+			marginBottom: '2em',
 		},
 	},
 	containerImageSection: {
@@ -102,16 +101,16 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '30px',
 		letterSpacing: '0.1em',
 		fontSize: '0.9em',
-		'& > p':{
+		'& > p': {
 			marginBottom: '1em',
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
 	},
 }))
-export default useStyles 
+export default useStyles

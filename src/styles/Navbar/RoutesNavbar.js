@@ -33,12 +33,12 @@ const useStyles = makeStyles(() => ({
 			border: '1px solid #F5F5F5',
 		},
 	},
-	routesMobile:{
+	routesMobile: {
 		display: 'flex',
-		flexDirection: 'column'
+		flexDirection: 'column',
 	},
-	routeMobile:{
-		width:' 100%',
+	routeMobile: {
+		width: ' 100%',
 		margin: '0.5em 0 ',
 		display: 'flex',
 		padding: '0.75em 0',
@@ -46,7 +46,7 @@ const useStyles = makeStyles(() => ({
 		'&:not(:last-child)': {
 			borderBottom: '2px solid gray',
 		},
-	}
+	},
 }))
 
 export default useStyles

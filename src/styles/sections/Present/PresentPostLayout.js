@@ -7,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '8em',
 		padding: '0 9em',
 		flexDirection: 'column',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			width: '100%',
-			padding: '0 4.5em'
+			padding: '0 4.5em',
 		},
 	},
 	title: {
@@ -37,24 +37,23 @@ const useStyles = makeStyles((theme) => ({
 	},
 	containerImage: {
 		width: '80%',
-		'& > div':{
-			position: 'unset !important'
-		}
+		'& > div': {
+			position: 'unset !important',
+		},
 	},
-	image:{
+	image: {
 		objectFit: 'contain',
 		width: '100% !important',
 		position: 'relative !important',
-		height: 'unset !important'
-
+		height: 'unset !important',
 	},
 	paragraphInterest: {
 		width: '40%',
 		letterSpacing: '0.03em',
 		fontWeight: 'bold',
 		color: '#6e6e6e',
-		[theme.breakpoints.down('sm')]:{
-			width: '100%'
+		[theme.breakpoints.down('sm')]: {
+			width: '100%',
 		},
 	},
 	titleArticle: {
@@ -63,43 +62,43 @@ const useStyles = makeStyles((theme) => ({
 	spaceTitle: {
 		marginBottom: '1.5em',
 	},
-	spaceArticles:{
+	spaceArticles: {
 		marginTop: '4em',
-		marginBottom: '2em'
+		marginBottom: '2em',
 	},
-	containerButton:{
+	containerButton: {
 		width: '100%',
 		display: 'flex',
 		justifyContent: 'flex-end',
-		margin: '3em 0'
+		margin: '3em 0',
 	},
 	button: {
 		width: '40%',
 		display: 'flex',
 		justifyContent: 'flex-end',
-		[theme.breakpoints.down('sm')]:{
-			width: '60%'
+		[theme.breakpoints.down('sm')]: {
+			width: '60%',
 		},
 	},
-	richText:{
-		'& > p':{
+	richText: {
+		'& > p': {
 			marginBottom: '1em',
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
 	},
-	richTextNote:{
-		marginTop: '2em'
+	richTextNote: {
+		marginTop: '2em',
 	},
-	imageMobile:{
+	imageMobile: {
 		position: 'relative',
 		width: '100%',
-		marginRight: '1.5em'
-	}
+		marginRight: '1.5em',
+	},
 }))
 export default useStyles

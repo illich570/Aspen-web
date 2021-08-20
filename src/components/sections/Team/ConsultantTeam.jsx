@@ -1,8 +1,7 @@
 import { Grid } from '@material-ui/core'
 import useStyles from '@/styles/sections/Team/ConsultantTeam'
 
-
-const ConsultantTeam = ({dataTeam, dataSection}) => {
+const ConsultantTeam = ({ dataTeam, dataSection }) => {
 	//eslint-disable-next-line
 	console.log(dataTeam)
 	const classes = useStyles()
@@ -30,11 +29,12 @@ const ConsultantTeam = ({dataTeam, dataSection}) => {
 						</div>
 						<header className={classes.memberNameRow}>
 							<h3 className={classes.nameMember}>{element.name}</h3>
-							<h3 className={classes.subtitleMember}>
-								{element.description}
-							</h3>
+							<h3 className={classes.subtitleMember}>{element.description}</h3>
 						</header>
-						<div className={classes.infoMember} dangerouslySetInnerHTML={{__html: element.resume.html}} />
+						<div
+							className={classes.infoMember}
+							dangerouslySetInnerHTML={{ __html: element.resume.html }}
+						/>
 					</article>
 				))}
 			</div>

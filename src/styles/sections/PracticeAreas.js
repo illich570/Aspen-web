@@ -12,13 +12,12 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
-		[theme.breakpoints.down('sm')]:{
-			padding: '0 4em'
+		[theme.breakpoints.down('sm')]: {
+			padding: '0 4em',
 		},
-		[theme.breakpoints.down('xs')]:{
-			padding: '0 2em'
-		}
-		
+		[theme.breakpoints.down('xs')]: {
+			padding: '0 2em',
+		},
 	},
 	title: {
 		fontSize: '3em',
@@ -26,9 +25,9 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.04em',
 		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
 		color: theme.palette.primary.main,
-		[theme.breakpoints.down('xs')]:{
-			fontSize: '2em'
-		}
+		[theme.breakpoints.down('xs')]: {
+			fontSize: '2em',
+		},
 	},
 	containerLogo: {
 		display: 'flex',
@@ -37,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: '1em',
 		width: '70px',
 		height: '70px',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			width: '40px',
-			height: '40px'
+			height: '40px',
 		},
 	},
 	containerTitle: {
@@ -55,17 +54,17 @@ const useStyles = makeStyles((theme) => ({
 	containerSection: {
 		width: '100%',
 		marginTop: '5em',
-		[theme.breakpoints.down('xs')]:{
-			marginTop: '2em'
+		[theme.breakpoints.down('xs')]: {
+			marginTop: '2em',
 		},
 	},
 	titleSection: {
 		color: theme.palette.primary.main,
 		textShadow: '0px 4px 6px rgba(174, 174, 174, 0.28)',
 		fontSize: '2em',
-		[theme.breakpoints.down('xs')]:{
-			fontSize: '1.5em'
-		}
+		[theme.breakpoints.down('xs')]: {
+			fontSize: '1.5em',
+		},
 	},
 	paragraphTitle: {
 		display: 'flex',
@@ -73,35 +72,35 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		marginLeft: '6em',
 		color: '#565656',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			width: '60%',
 		},
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			width: '80%',
-			margin: '0 auto'
-		}
+			margin: '0 auto',
+		},
 	},
 	list: {
 		marginTop: '1.5em',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			display: 'flex',
 			flexDirection: 'row',
 			marginTop: '0',
 			flexWrap: 'wrap',
-			justifyContent: 'center'
+			justifyContent: 'center',
 		},
 	},
 	listItem: {
 		marginBottom: '2em',
 		position: 'relative',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			margin: '1.5em',
-			textAlign: 'center'
+			textAlign: 'center',
 		},
 		color: '#666',
-		'&:hover':{
-			cursor: 'pointer'
-		}
+		'&:hover': {
+			cursor: 'pointer',
+		},
 	},
 	sectionInfo: {
 		backgroundColor: '#F6F9FB',
@@ -112,13 +111,13 @@ const useStyles = makeStyles((theme) => ({
 		opacity: 0,
 		transition: 'all 0.5s',
 		position: 'relative',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			padding: '1em 2em',
-			marginBottom:'3em'
+			marginBottom: '3em',
 		},
 	},
-	sectionInfoFade:{
-		opacity: 1
+	sectionInfoFade: {
+		opacity: 1,
 	},
 	titleRowSection: {
 		display: 'flex',
@@ -132,24 +131,24 @@ const useStyles = makeStyles((theme) => ({
 		width: '60px',
 		height: '60px',
 		marginRight: '1em',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			width: '40px',
 			height: '40px',
-		}
+		},
 	},
 	paragraphSection: {
 		letterSpacing: '0.06em',
 		marginBottom: '2em',
-		'& > p':{
+		'& > p': {
 			'&:not(:last-child)': {
-				marginBottom: '0.7em'
+				marginBottom: '0.7em',
 			},
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
 	},
@@ -160,7 +159,7 @@ const useStyles = makeStyles((theme) => ({
 		height: '5.5vh',
 		display: 'flex',
 		justifyContent: 'flex-end',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			justifyContent: 'center',
 			width: '100%',
 			left: 0,
@@ -186,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',
 		position: 'relative',
 		margin: '0 1em',
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			width: '40px',
 			height: '40px',
 		},
@@ -207,10 +206,10 @@ const useStyles = makeStyles((theme) => ({
 			transform: 'rotate(90deg)',
 			transition: 'all 0.5s',
 		},
-		[theme.breakpoints.down('sm')]:{
-			'&::after':{
-				content: 'none'
-			}
+		[theme.breakpoints.down('sm')]: {
+			'&::after': {
+				content: 'none',
+			},
 		},
 	},
 }))

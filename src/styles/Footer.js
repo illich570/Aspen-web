@@ -17,17 +17,17 @@ const useStyles = makeStyles((theme) => ({
 	rowLinks: {
 		display: 'flex',
 		justifyContent: 'space-evenly',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			flexDirection: 'column',
-			justifyContent: 'center', 
-			alignItems: 'center'
+			justifyContent: 'center',
+			alignItems: 'center',
 		},
 	},
 	link: {
 		color: 'white',
 		fontWeight: '500',
-		[theme.breakpoints.down('sm')]:{
-			margin: '0.5em 0 '
+		[theme.breakpoints.down('sm')]: {
+			margin: '0.5em 0 ',
 		},
 	},
 	containerRow: {

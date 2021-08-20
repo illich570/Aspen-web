@@ -7,8 +7,8 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '8em',
 		padding: '0 9em',
 		flexDirection: 'column',
-		[theme.breakpoints.down('sm')]:{
-			padding: '0 2em'
+		[theme.breakpoints.down('sm')]: {
+			padding: '0 2em',
 		},
 	},
 	title: {
@@ -34,21 +34,21 @@ const useStyles = makeStyles((theme) => ({
 		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
 		color: theme.palette.primary.main,
 		marginTop: '0.5em',
-		marginBottom: '1.5em'
+		marginBottom: '1.5em',
 	},
 	paragraph: {
 		letterSpacing: '0.06em',
 		lineHeight: '30px',
 		color: '#666',
 		minHeight: '350px',
-		'& > p':{
+		'& > p': {
 			marginBottom: '1em',
 		},
-		'& > ul':{
+		'& > ul': {
 			listStyle: 'initial',
-			marginLeft:'1.5em',
+			marginLeft: '1.5em',
 		},
-		'& > li':{
+		'& > li': {
 			listStyle: 'initial',
 		},
 	},
@@ -73,13 +73,13 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'space-evenly',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			maxWidth: '500px',
-			marginBottom: '1.5em'
+			marginBottom: '1.5em',
 		},
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			margin: '0',
-			marginBottom: '1.5em'
+			marginBottom: '1.5em',
 		},
 	},
 	memberNameRow: {
@@ -88,9 +88,9 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'flex-end',
 		flexDirection: 'column',
 		alignItems: 'flex-end',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			justifyContent: 'center',
-			alignItems: 'center'
+			alignItems: 'center',
 		},
 	},
 	nameMember: {
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
 	emailMember: {
 		fontWeight: '300',
 		color: '#666',
-		marginTop: '0.3em'
+		marginTop: '0.3em',
 	},
 	containerImageSection: {
 		width: '150px',
@@ -114,9 +114,9 @@ const useStyles = makeStyles((theme) => ({
 		left: '-60px',
 		'@media (max-width: 1360px)': {
 			width: '110px',
-			height: '110px'
+			height: '110px',
 		},
-		[theme.breakpoints.down('xs')]:{
+		[theme.breakpoints.down('xs')]: {
 			width: '80px',
 			height: '80px',
 			top: '-50px',
@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.09em',
 		color: '#666',
 		marginTop: '1em',
-		lineHeight: '30px'
+		lineHeight: '30px',
 	},
 }))
 

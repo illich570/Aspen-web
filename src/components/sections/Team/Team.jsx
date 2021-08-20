@@ -22,39 +22,42 @@ const Team = ({ dataConsultant, dataTeam, dataSection }) => {
 							{dataTeam.map((element) => (
 								<div className={classes.containerTeam} key={element.id}>
 									<Link href={`equipo/${element.slug}`} passHref>
-									<a style={{display: 'contents'}}>
-									<div className={`${classes.containerImageSection}`}>
-										<img alt={element.name} className={classes.image} src={element.image.url} />
-									</div>
-									<h5 className={classes.nameTeam}>{element.name}</h5>
-									</a>
+										<a style={{ display: 'contents' }}>
+											<div className={`${classes.containerImageSection}`}>
+												<img alt={element.name} className={classes.image} src={element.image.url} />
+											</div>
+											<h5 className={classes.nameTeam}>{element.name}</h5>
+										</a>
 									</Link>
 								</div>
-									
 							))}
 						</div>
 					</section>
 				</Grid>
-				<Grid item md={12} >
+				<Grid item md={12}>
 					<Grid className={classes.containerSectionTeam} container>
 						<Grid item md={3} xs={12}>
 							<h3 className={classes.title}>{dataSection[0].consultantsTitle}</h3>
 						</Grid>
 						<Grid className={classes.sectionConsulting} item md={9} xs={12}>
 							<section>
-							<Link href={`equipo/consultores`} passHref>
-								<a>
-								<div className={classes.sectionTeam}>
-									{dataConsultant.map((element) => (
-										<div className={classes.containerTeam} key={element.id}>
-											<div className={`${classes.containerImageSection}`}>
-												<img alt={element.name} className={classes.image} src={element.image.url} />
-											</div>
-											<h5 className={classes.nameTeam}>{element.name}</h5>
+								<Link href={`equipo/consultores`} passHref>
+									<a>
+										<div className={classes.sectionTeam}>
+											{dataConsultant.map((element) => (
+												<div className={classes.containerTeam} key={element.id}>
+													<div className={`${classes.containerImageSection}`}>
+														<img
+															alt={element.name}
+															className={classes.image}
+															src={element.image.url}
+														/>
+													</div>
+													<h5 className={classes.nameTeam}>{element.name}</h5>
+												</div>
+											))}
 										</div>
-									))}
-								</div>
-								</a>
+									</a>
 								</Link>
 							</section>
 						</Grid>

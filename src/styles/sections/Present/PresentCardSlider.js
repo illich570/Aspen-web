@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-
 const useStyles = makeStyles((theme) => ({
 	title: {
 		margin: '0.5em 0',
@@ -8,12 +7,12 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: 'bold',
 		fontSize: '1.2em',
 		paddingRight: '3em',
-		[theme.breakpoints.down('sm')]:{
+		[theme.breakpoints.down('sm')]: {
 			fontSize: '1em',
 		},
-		[theme.breakpoints.down('xs')]:{
-			fontSize: '1.3em'
-		}
+		[theme.breakpoints.down('xs')]: {
+			fontSize: '1.3em',
+		},
 	},
 	container: {
 		width: '100%',
@@ -24,33 +23,33 @@ const useStyles = makeStyles((theme) => ({
 	containerSlider: {
 		width: '85%',
 	},
-	containerImage:{
-		width:'80%',
-		position: 'relative'
+	containerImage: {
+		width: '80%',
+		position: 'relative',
 	},
-	containerCard:{
+	containerCard: {
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'space-around',
 		width: '100%',
-		minHeight:'385px',
-		[theme.breakpoints.down('sm')]:{
+		minHeight: '385px',
+		[theme.breakpoints.down('sm')]: {
 			width: '90%',
-			minHeight:'230px',
+			minHeight: '230px',
 			margin: '0 auto',
-			fontSize: '0.85em'
+			fontSize: '0.85em',
 		},
-		[theme.breakpoints.down('xs')]:{
-			minHeight: '350px'
-		}
+		[theme.breakpoints.down('xs')]: {
+			minHeight: '350px',
+		},
 	},
-	button:{
+	button: {
 		display: 'flex',
-		width:'60%',
-		[theme.breakpoints.down('sm')]:{
-			width: '50%'
-		}
-	}
+		width: '60%',
+		[theme.breakpoints.down('sm')]: {
+			width: '50%',
+		},
+	},
 }))
 
 export default useStyles

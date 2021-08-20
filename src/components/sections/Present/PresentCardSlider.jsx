@@ -24,9 +24,8 @@ const PresentCardSlider = ({ dataArticles }) => {
 								<h1 className={classes.title}>{element.title}</h1>
 								<div className={classes.button}>
 									<Link href={`/actualidad/${element.url}`} passHref>
-									<ButtonArrowNext title="Leer el artículo" />
-									</Link >
-									
+										<ButtonArrowNext title="Leer el artículo" />
+									</Link>
 								</div>
 							</div>
 						</article>

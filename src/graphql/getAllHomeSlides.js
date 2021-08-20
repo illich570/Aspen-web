@@ -1,4 +1,4 @@
-const getAllHomeSlides = 	`
+const getAllHomeSlides = `
 {					
   homeSections{
     id
