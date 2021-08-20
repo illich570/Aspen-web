@@ -9,6 +9,9 @@ const getInternationalSection = `
     content{
       html
     }
+    background{
+      url
+    }
   }
 }`
 

@@ -9,9 +9,9 @@ const HomeSlide = ({ data }) => {
 			<div className={classes.container}>
 				<div className={classes.glassBlur} />
 				<div className={classes.containerMouse}>
-					<Image alt="Mouse" height={25} src="/mouse.svg" width={25} />
+					<Image alt="" height={25} src="/mouse.svg" width={25} />
 					<div className={classes.arrows}>
-						<Image alt="arrows" height={12} src="/arrows.svg" width={12} />
+						<Image alt="" height={12} src="/arrows.svg" width={12} />
 					</div>
 				</div>
 				<div className={classes.containerBackground}>

@@ -1,16 +1,15 @@
 import useStyles from '@/styles/Footer'
-import Aspen from '@/components/Aspen'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Footer = ({ routes, dataFooter }) => {
+const Footer = ({ routes, dataFooter, logos }) => {
 	const actualDate = new Date().getFullYear()
 	const classes = useStyles()
 	const data = dataFooter[0]
 	return (
 		<footer className={classes.container}>
 			<div className={classes.containerLogo}>
-				<Aspen />
+			<Image alt="Aspen legal" height={100} src={logos[0].logo.url} width={100} />
 			</div>
 			<div className={classes.rowLinks}>
 				{routes.map((route) => (

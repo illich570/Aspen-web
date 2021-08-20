@@ -1,17 +1,17 @@
 import { Grid } from '@material-ui/core'
-import useStyles from '@/styles/sections/Team'
+import useStyles from '@/styles/sections/Team/Team'
 import Link from 'next/link'
 
-const Team = ({ dataConsultant, dataTeam }) => {
+const Team = ({ dataConsultant, dataTeam, dataSection }) => {
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>
-			<Grid container justify="center">
+			<Grid className={classes.containerGrid} container justify="center">
 				<Grid item md={12}>
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>
 							<div>
-								<h3 className={classes.title}>Equipo</h3>
+								<h3 className={classes.title}>{dataSection[0].teamTitle}</h3>
 							</div>
 						</div>
 					</div>
@@ -35,12 +35,12 @@ const Team = ({ dataConsultant, dataTeam }) => {
 						</div>
 					</section>
 				</Grid>
-				<Grid item md={12}>
+				<Grid item md={12} >
 					<Grid className={classes.containerSectionTeam} container>
-						<Grid item md={3}>
-							<h3 className={classes.title}>Equipo</h3>
+						<Grid item md={3} xs={12}>
+							<h3 className={classes.title}>{dataSection[0].consultantsTitle}</h3>
 						</Grid>
-						<Grid item md={9}>
+						<Grid className={classes.sectionConsulting} item md={9} xs={12}>
 							<section>
 							<Link href={`equipo/consultores`} passHref>
 								<a>

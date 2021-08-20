@@ -1,8 +1,8 @@
 import { Grid } from '@material-ui/core'
-import useStyles from '@/styles/sections/ConsultantTeam'
+import useStyles from '@/styles/sections/Team/ConsultantTeam'
 
 
-const ConsultantTeam = ({dataTeam}) => {
+const ConsultantTeam = ({dataTeam, dataSection}) => {
 	//eslint-disable-next-line
 	console.log(dataTeam)
 	const classes = useStyles()
@@ -13,11 +13,11 @@ const ConsultantTeam = ({dataTeam}) => {
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>
 							<div>
-								<h3 className={classes.title}>Consultores</h3>
+								<h3 className={classes.title}>{dataSection[0].consultantsTitle}</h3>
 							</div>
 						</div>
 						<div>
-							<h3 className={classes.subtitle}>Equipo</h3>
+							<h3 className={classes.subtitle}>{dataSection[0].teamTitle}</h3>
 						</div>
 					</div>
 				</Grid>

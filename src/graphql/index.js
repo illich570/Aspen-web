@@ -12,7 +12,7 @@ import getInternationalSection from './getInternationalSection'
 import getAllRoutes from './getAllRoutes'
 import getFooterSection from './getFooterSection'
 import getContactData from './getContactData'
-
+import getAllLogos from './getAllLogos'
 
 export {
   getAllHomeSlides,
@@ -28,5 +28,6 @@ export {
   getInternationalSection,
   getAllRoutes,
   getFooterSection,
-  getContactData
+  getContactData,
+  getAllLogos
 }

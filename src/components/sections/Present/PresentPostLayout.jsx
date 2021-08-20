@@ -13,7 +13,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 				<div className={classes.containerTitle}>
 					<div className={classes.containerLogo}>
 						<Image
-							alt="Justicia"
+							alt=""
 							height={100}
 							src={presentSections[0].iconArticle.url}
 							width={100}
@@ -71,7 +71,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 					<Grid item md={3}>
 						<div className={classes.imageMobile}>
 							<Image
-								alt="Justicia"
+								alt=""
 								height={42}
 								src={presentSections[0].iconArticle.url}
 								width={42}
@@ -109,18 +109,21 @@ const PresentPostLayout = ({ dataArticle }) => {
 							) : null}
 							<div className={classes.containerButton}>
 								<div className={classes.button}>
-									<Link href={`/actualidad/${articles[1].url}`} passHref>
+									<Link href={`/actualidad/${articles[0].url}`} passHref>
 										<ButtonArrowNext title="Siguiente articulo" />
 									</Link>
 								</div>
 							</div>
 						</article>
 					</Grid>
-					<Grid item md={12}>
+					<Grid item md={12} style={{width: '100%'}}>
 							<div className={classes.paragraphInterest}>
 								<p>Articulos que podrian ser de tu interes</p>
 							</div>
-							{/* <ArticleSlider dataArticles={articles} /> */}
+							<div>
+								<ArticleSlider dataArticles={articles} />
+							</div>
+							
 					</Grid>
 				</Grid>
 			</Hidden>

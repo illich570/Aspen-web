@@ -14,6 +14,12 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
+		[theme.breakpoints.down('sm')]:{
+			padding: '0 4em'
+		},
+		[theme.breakpoints.down('xs')]:{
+			padding: '0 2em'
+		}
 	},
 	containerGrid:{
 		paddingTop: '2em'
@@ -61,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
 		width: '35%',
 		marginLeft: '2em',
 		marginTop: '2.5em',
+		[theme.breakpoints.down('sm')]:{
+			width: '80%'
+		},
 	},
 	listItem: {
 		marginBottom: '2em',
@@ -92,10 +101,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 	containerSectionTitle: {
 		paddingLeft: '6em',
+		[theme.breakpoints.down('sm')]:{
+			paddingLeft:' 0.5em'
+		},
 	},
 	richText:{
 		'& > p':{
-			marginBottom: '0.7em',
+			marginBottom: '1em',
 		},
 		'& > ul':{
 			listStyle: 'initial',
@@ -103,7 +115,11 @@ const useStyles = makeStyles((theme) => ({
 		},
 		'& > li':{
 			listStyle: 'initial',
-		}
+		},
+		[theme.breakpoints.down('xs')]:{
+			marginBottom: '2em'
+		},
+
 	}
 }))
 

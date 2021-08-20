@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 	container: {
 		width: '100%',
 		position: 'relative',
@@ -8,9 +8,9 @@ const useStyles = makeStyles(() => ({
 	},
 	containerBackground: {
 		width: '100%',
-		height: '100vh',
+		minHeight: '100vh',
 		backgroundSize: 'cover',
-		backgroundImage: 'url("/bg2.png")',
+		backgroundImage: (props) => `url(${props.background.url})`,
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 		backgroundAttachment: 'fixed',
@@ -26,6 +26,9 @@ const useStyles = makeStyles(() => ({
 		backgroundColor: 'rgba(255, 255, 255, 0.17)',
 		top: '-25%',
 		right: '-29%',
+		[theme.breakpoints.down('sm')]:{
+			display: 'none'
+		},
 	},
 	containerText: {
 		marginBottom: '2.5em',
@@ -37,10 +40,20 @@ const useStyles = makeStyles(() => ({
 		justifyContent: 'center',
 		paddingLeft: '9.5em',
 		paddingRight: '7em',
-    marginTop: '4em'
+    marginTop: '6em',
+		'@media (max-width: 1250px)': {
+			padding: "0 3em",
+			marginTop: '5em'
+		},
+		[theme.breakpoints.down('sm')]:{
+			padding: "0 2em"
+		},
 	},
 	containerSection: {
 		height: '100%',
+		[theme.breakpoints.down('sm')]:{
+		 justifyContent: 'center'
+		},
 	},
 	title: {
 		fontSize: '2.8em',
@@ -52,6 +65,16 @@ const useStyles = makeStyles(() => ({
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
+		'& > p':{
+			marginBottom: '1em',
+		},
+		'& > ul':{
+			listStyle: 'initial',
+			marginLeft:'1.5em',
+		},
+		'& > li':{
+			listStyle: 'initial',
+		},
 	},
   containerRow:{
     width: '100%',

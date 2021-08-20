@@ -11,6 +11,10 @@ const getAllConsultantsMember = `
       url
     }
   }
+  teamSections(first: 1){
+    teamTitle
+    consultantsTitle
+  }
 }`
 
 export default getAllConsultantsMember

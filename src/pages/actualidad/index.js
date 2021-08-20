@@ -1,14 +1,14 @@
 import Layout from '@/components/Layout'
 import LegalPresent from '@/components/sections/Present/LegalPresent'
 import { GraphClient } from '@/lib'
-import {getAllArticlesAndHero, getAllRoutes} from '@/graphql'
+import {getAllArticlesAndHero, getAllRoutes,getAllLogos} from '@/graphql'
 
 
-const Present = ({articles, presentSections,routesNavbars}) => {
+const Present = ({articles, presentSections,routesNavbars, logoSections}) => {
 
 const presentSection = presentSections[0]
   return (
-    <Layout routes={routesNavbars} titleHead="Aspen Actualidad">
+    <Layout logos={logoSections} routes={routesNavbars} titleHead="Aspen Legal">
       <LegalPresent dataArticles={articles} dataHero={presentSection}/>
     </Layout>
   )
@@ -22,11 +22,13 @@ export async function getStaticProps() {
 
 	const { articles, presentSections} = await GraphClient.request(getAllArticlesAndHero)
   const {routesNavbars} = await GraphClient.request(getAllRoutes)
+  const {logoSections} = await GraphClient.request(getAllLogos)
 	return {
 		props: {
 			articles,
       presentSections,
-      routesNavbars
+      routesNavbars,
+      logoSections
 		},
 	}
 }

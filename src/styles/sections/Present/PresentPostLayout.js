@@ -81,6 +81,18 @@ const useStyles = makeStyles((theme) => ({
 			width: '60%'
 		},
 	},
+	richText:{
+		'& > p':{
+			marginBottom: '1em',
+		},
+		'& > ul':{
+			listStyle: 'initial',
+			marginLeft:'1.5em',
+		},
+		'& > li':{
+			listStyle: 'initial',
+		},
+	},
 	richTextNote:{
 		marginTop: '2em'
 	},

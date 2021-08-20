@@ -5,9 +5,8 @@ import useStyles from '@/styles/sections/International'
 
 const International = ({dataSection}) => {
 	const data = dataSection[0]
-	const classes = useStyles()
+	const classes = useStyles(data)
 	return (
-		<>
 			<div className={classes.container}>
 				<div className={classes.glassBlur} />
 				<div className={classes.containerBackground}>
@@ -26,7 +25,6 @@ const International = ({dataSection}) => {
 					</Grid>
 				</div>
 			</div>
-		</>
 	)
 }
 

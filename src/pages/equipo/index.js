@@ -1,12 +1,13 @@
 import Layout from '@/components/Layout'
 import { GraphClient } from '@/lib'
-import {getAllMember, getAllRoutes} from '@/graphql'
-import Team from '@/components/sections/Team'
+import {getAllMember, getAllRoutes, getAllLogos} from '@/graphql'
+import Team from '@/components/sections/Team/Team'
 
-const Areas = ({teamMembers,consultantMembers, routesNavbars}) => {
+
+const Areas = ({teamMembers,consultantMembers, routesNavbars,teamSections,logoSections}) => {
 	return (
-		<Layout blackColor routes={routesNavbars} titleHead="Aspen Actualidad">
-			<Team  dataConsultant={consultantMembers} dataTeam={teamMembers}/>
+		<Layout blackColor logos={logoSections} routes={routesNavbars} titleHead="Aspen Legal">
+			<Team dataConsultant={consultantMembers} dataSection={teamSections} dataTeam={teamMembers}/>
 		</Layout>
 	)
 }
@@ -15,13 +16,16 @@ export default Areas
 
 export async function getStaticProps() {
 
-	const { teamMembers,consultantMembers } = await GraphClient.request(getAllMember)
+	const { teamMembers,consultantMembers,teamSections } = await GraphClient.request(getAllMember)
 	const {routesNavbars} = await GraphClient.request(getAllRoutes)
+	const {logoSections} = await GraphClient.request(getAllLogos)
 	return {
 		props: {
 			teamMembers,
 			consultantMembers,
-			routesNavbars
+			routesNavbars,
+			teamSections,
+			logoSections
 		},
 	}
 }

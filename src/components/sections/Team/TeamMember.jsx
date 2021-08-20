@@ -1,12 +1,12 @@
 import { Grid } from '@material-ui/core'
 import ButtonArrowNext from '@/components/ButtonArrowNext'
-import useStyles from '@/styles/sections/TeamMember'
+import useStyles from '@/styles/sections/Team/TeamMember'
 import Link from 'next/link'
 
 
 
 const TeamMember = ({dataMember}) => {
-	const {teamMember,teamMembers} = dataMember
+	const {teamMember,teamMembers, teamSections} = dataMember
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>
@@ -15,11 +15,11 @@ const TeamMember = ({dataMember}) => {
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>
 							<div>
-								<h3 className={classes.title}>Equipo</h3>
+								<h3 className={classes.title}>{teamSections[0].teamTitle}</h3>
 							</div>
 						</div>
 						<div>
-							<h3 className={classes.subtitle}>Consultores</h3>
+							<h3 className={classes.subtitle}>{teamSections[0].consultantsTitle}</h3>
 						</div>
 					</div>
 				</Grid>

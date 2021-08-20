@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 	containerTooltip: {
 		width: '100%',
 		display: 'flex',
@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     padding: '0.5em',
     justifyContent: 'space-evenly',
     borderRadius: '4px',
-    '@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
       fontSize: '0.8em'
 		},
 	},
@@ -30,12 +30,12 @@ const useStyles = makeStyles(() => ({
   rowItem:{
     margin: '0.5em 0',
     display: 'flex',
-    '@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
       flexDirection: 'column'
 		},
   },
   info:{
-    '@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'

@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: 'rgba(255, 255, 255, 0.17)',
 		top: '-25%',
 		right: '-29%',
-		'@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
 			display: 'none'
 		},
 	},
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		justifyContent: 'space-evenly',
 		alignItems: 'center',
-		'@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
 			left: '55%',
 		},
 	},
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
 		'@media (max-width: 1250px)': {
 			padding: "0 3em"
 		},
-		'@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
 			padding: "0 2em"
 		},
 	},
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
-		'@media (max-width: 960px)': {
+		[theme.breakpoints.down('sm')]:{
 			textAlign: 'center',
 			color: '#fff',
 			textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)'

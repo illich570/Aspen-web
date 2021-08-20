@@ -1,6 +1,5 @@
 import useStyles from '@/styles/Hero'
 import Image from 'next/image'
-import HeroBackground from '../../public/background.png'
 
 const Hero = ({ dataHero }) => {
 	const classes = useStyles()
@@ -12,7 +11,7 @@ const Hero = ({ dataHero }) => {
 				layout="fill"
 				objectFit="cover"
 				objectPosition="bottom"
-				src={HeroBackground}
+				src={dataHero.background.url}
 			/>
 			<div className={classes.containerHero}>
 				<div className={classes.containerLogo}>

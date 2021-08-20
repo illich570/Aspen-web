@@ -30,14 +30,18 @@ const CardSlider = ({ dataArticles }) => {
 				<div className={classes.containerSlider}>
 					<Slider dots={false} slidesToShow={3}>
 						{dataArticles.map((element) => (
-							<Link href={`/actualidad/${element.url}`} key={`card_${element.title}`} passHref>
-								<a>
-									<div className={classes.containerImage}>
-										<Image alt="Aspen" height={100} src={element.image.url} width={100} />
-										<h5 className={classes.title}>{element.title}</h5>
-									</div>
-								</a>
-							</Link>
+							<div key={`card_${element.title}`}>
+								<div className={classes.containerCardSlider}>
+									<Link href={`/actualidad/${element.url}`} passHref>
+										<a>
+											<div className={classes.containerImage}>
+												<Image alt={element.title} height={100} src={element.image.url} width={100} />
+												<h5 className={classes.title}>{element.title}</h5>
+											</div>
+										</a>
+									</Link>
+								</div>
+							</div>
 						))}
 					</Slider>
 				</div>

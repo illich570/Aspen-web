@@ -15,6 +15,10 @@ query TeamMember($slug: String!){
   teamMembers(where: {slug_not : $slug}, skip: 1){
     slug
   }
+  teamSections(first: 1){
+    teamTitle
+    consultantsTitle
+  }
 }`
 
 export default getArticle

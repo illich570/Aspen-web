@@ -7,12 +7,15 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '8em',
 		padding: '0 9em',
 		flexDirection: 'column',
+		[theme.breakpoints.down('sm')]:{
+			padding: '0 2em'
+		},
 	},
 	title: {
-		fontSize: '2.5em',
+		fontSize: '2.8em',
 		fontWeight: '600',
 		letterSpacing: '0.04em',
-		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
+		textShadow: '0px 4px 6px rgba(174, 174, 174, 0.28)',
 		color: theme.palette.primary.main,
 	},
 	containerTitle: {
@@ -38,6 +41,16 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '30px',
 		color: '#666',
 		minHeight: '350px',
+		'& > p':{
+			marginBottom: '1em',
+		},
+		'& > ul':{
+			listStyle: 'initial',
+			marginLeft:'1.5em',
+		},
+		'& > li':{
+			listStyle: 'initial',
+		},
 	},
 	containerButton: {
 		width: '100%',
@@ -60,6 +73,14 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'space-evenly',
+		[theme.breakpoints.down('sm')]:{
+			maxWidth: '500px',
+			marginBottom: '1.5em'
+		},
+		[theme.breakpoints.down('xs')]:{
+			margin: '0',
+			marginBottom: '1.5em'
+		},
 	},
 	memberNameRow: {
 		width: '100%',
@@ -67,6 +88,10 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'flex-end',
 		flexDirection: 'column',
 		alignItems: 'flex-end',
+		[theme.breakpoints.down('sm')]:{
+			justifyContent: 'center',
+			alignItems: 'center'
+		},
 	},
 	nameMember: {
 		fontSize: '1.25em',
@@ -86,7 +111,17 @@ const useStyles = makeStyles((theme) => ({
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',
 		position: 'absolute',
 		top: '-60px',
-		left: '-60px'
+		left: '-60px',
+		'@media (max-width: 1360px)': {
+			width: '110px',
+			height: '110px'
+		},
+		[theme.breakpoints.down('xs')]:{
+			width: '80px',
+			height: '80px',
+			top: '-50px',
+			left: '-20px',
+		},
 	},
 	image: {
 		position: 'absolute',

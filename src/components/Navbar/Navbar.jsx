@@ -3,7 +3,6 @@ import AppBar from '@material-ui/core/AppBar'
 import { withStyles } from '@material-ui/core/styles'
 import { Grid, Button, Hidden, Drawer, IconButton } from '@material-ui/core'
 import RoutesNavbar from '@/components/Navbar/RoutesNavbar'
-import Aspen from '@/components/Aspen'
 import Tooltip from '@material-ui/core/Tooltip'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import ContactTooltip from '@/components/Navbar/ContactTooltip'
@@ -13,6 +12,7 @@ import Dialog from '@material-ui/core/Dialog'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import DialogContent from '@material-ui/core/DialogContent'
 import useStyles from '@/styles/Navbar/Navbar'
+import Image from 'next/image'
 
 const CustomTooltip = withStyles((theme) => ({
 	tooltip: {
@@ -40,7 +40,7 @@ const CustomTooltip = withStyles((theme) => ({
 }))(Tooltip)
 
 
-const Navbar = ({ blackColor, routes}) => {
+const Navbar = ({ blackColor, routes, logos}) => {
 	const classes = useStyles()
 	const [open, setOpen] = useState(false)
 	const [showSidebar, setShowSidebar] = useState(false)
@@ -62,12 +62,14 @@ const Navbar = ({ blackColor, routes}) => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
+	const logoUrl = blackColor === true ? logos[0].darkLogo.url : logos[0].logo.url
 	return (
 		<AppBar className={classes.noBoxShadow} color="transparent">
 			<Grid className={classes.containerNavbar} container justify="center">
 				<Grid item md={2} xs={6}>
 					<div className={classes.container}>
-						<Aspen blackColor={blackColor} />
+						<Image alt="Justicia" height={60} src={logoUrl} width={100} />
 					</div>
 				</Grid>
 				<Grid item md={10} xs={6}>
@@ -95,7 +97,7 @@ const Navbar = ({ blackColor, routes}) => {
 												onClick={handleTooltipOpen}
 												variant="contained"
 											>
-												Contactanos
+												Contáctanos
 											</Button>
 										</CustomTooltip>
 									</ClickAwayListener>
@@ -136,7 +138,7 @@ const Navbar = ({ blackColor, routes}) => {
 									onClick={handleOpenModal}
 									variant="contained"
 								>
-									Contactanos
+									Contáctanos
 								</Button>
 							</Grid>
 						</Drawer>

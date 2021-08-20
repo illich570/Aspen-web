@@ -86,9 +86,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down('sm')]:{
 			display: 'flex',
 			flexDirection: 'row',
-			marginTop: '0'
-		},
-		[theme.breakpoints.down('xs')]:{
+			marginTop: '0',
 			flexWrap: 'wrap',
 			justifyContent: 'center'
 		},
@@ -97,7 +95,8 @@ const useStyles = makeStyles((theme) => ({
 		marginBottom: '2em',
 		position: 'relative',
 		[theme.breakpoints.down('sm')]:{
-			margin: '1.5em'
+			margin: '1.5em',
+			textAlign: 'center'
 		},
 		color: '#666',
 		'&:hover':{
@@ -114,7 +113,8 @@ const useStyles = makeStyles((theme) => ({
 		transition: 'all 0.5s',
 		position: 'relative',
 		[theme.breakpoints.down('xs')]:{
-			padding: '1em 2em'
+			padding: '1em 2em',
+			marginBottom:'3em'
 		},
 	},
 	sectionInfoFade:{
@@ -144,7 +144,14 @@ const useStyles = makeStyles((theme) => ({
 			'&:not(:last-child)': {
 				marginBottom: '0.7em'
 			},
-		}
+		},
+		'& > ul':{
+			listStyle: 'initial',
+			marginLeft:'1.5em',
+		},
+		'& > li':{
+			listStyle: 'initial',
+		},
 	},
 	imagesSectionRow: {
 		position: 'absolute',
@@ -156,7 +163,8 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down('xs')]:{
 			justifyContent: 'center',
 			width: '100%',
-			left: 0
+			left: 0,
+			height: '3.5vh',
 		},
 	},
 	imageSection: {
