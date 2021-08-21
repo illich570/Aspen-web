@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		position: 'relative',
 		display: 'flex',
-		marginTop: '8em',
+		marginTop: '7em',
 		padding: '0 9em',
 		flexDirection: 'column',
 		[theme.breakpoints.down('sm')]: {
@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'space-evenly',
+		marginTop: '7em',
 		[theme.breakpoints.down('sm')]: {
 			maxWidth: '500px',
 			marginBottom: '1.5em',
@@ -104,8 +105,8 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '0.3em',
 	},
 	containerImageSection: {
-		width: '150px',
-		height: '150px',
+		width: '140px',
+		height: '140px',
 		background: 'white',
 		borderRadius: '50%',
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',

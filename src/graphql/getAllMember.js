@@ -1,6 +1,6 @@
 const getAllMember = `
 {
-  teamMembers{
+  teamMembers(orderBy: order_ASC){
     id
     name
     slug
@@ -8,7 +8,7 @@ const getAllMember = `
       url
     }
   }
-  consultantMembers{
+  consultantMembers(orderBy: order_ASC){
     id
     name
     image{

@@ -35,7 +35,7 @@ const Team = ({ dataConsultant, dataTeam, dataSection }) => {
 					</section>
 				</Grid>
 				<Grid item md={12}>
-					<Grid className={classes.containerSectionTeam} container>
+					<Grid className={`${classes.containerSectionTeam} ${classes.lastContainerTeam}`} container>
 						<Grid item md={3} xs={12}>
 							<h3 className={classes.title}>{dataSection[0].consultantsTitle}</h3>
 						</Grid>

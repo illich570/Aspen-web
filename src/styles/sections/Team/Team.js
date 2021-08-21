@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	title: {
-		fontSize: '2.5em',
+		fontSize: '2em',
 		fontWeight: '600',
 		letterSpacing: '0.04em',
 		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
@@ -48,8 +48,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	containerImageSection: {
-		width: '120px',
-		height: '120px',
+		width: '110px',
+		height: '110px',
 		background: 'white',
 		borderRadius: '50%',
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	containerSectionTeam: {
-		marginTop: '6em',
+		marginTop: '6.5em',
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '2em',
 		},
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
 	nameTeam: {
 		letterSpacing: '0.07em',
 		color: '#666',
-		fontSize: '1em',
+		fontSize: '0.9em',
 		fontWeight: '500',
 		[theme.breakpoints.down('sm')]: {
 			marginTop: '1.5em',
@@ -101,6 +101,9 @@ const useStyles = makeStyles((theme) => ({
 			marginTop: '2em',
 		},
 	},
+	lastContainerTeam:{
+		marginTop: '8em'
+	}
 }))
 
 export default useStyles

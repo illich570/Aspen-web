@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		backdropFilter: 'blur(25px)',
 		WebkitBackdropFilter: 'blur(25px)',
 		backgroundColor: 'rgba(255, 255, 255, 0.17)',
-		top: '-25%',
+		top: '-15%',
 		right: '-29%',
 		[theme.breakpoints.down('sm')]: {
 			display: 'none',
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		justifyContent: 'center',
 		paddingLeft: '9.5em',
-		paddingRight: '7em',
+		paddingRight: '5em',
 		marginTop: '6em',
 		'@media (max-width: 1250px)': {
 			padding: '0 3em',
@@ -56,7 +56,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	title: {
-		fontSize: '2.8em',
+		fontSize: '2.35em',
+		textAlign: 'center',
 		fontWeight: '500',
 		letterSpacing: '0.04em',
 		textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
@@ -65,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
+		fontSize: '0.9em',
 		'& > p': {
 			marginBottom: '1em',
 		},
@@ -82,7 +84,6 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 	},
 	containerImage: {
-		marginRight: '2.6em',
 	},
 }))
 

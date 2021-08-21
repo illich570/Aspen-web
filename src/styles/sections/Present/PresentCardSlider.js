@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
 		margin: '1em 0',
 	},
 	containerSlider: {
-		width: '85%',
+		width: '80%',
 	},
 	containerImage: {
-		width: '80%',
+		width: '100%',
 		position: 'relative',
 	},
 	containerCard: {
@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'space-around',
 		width: '100%',
 		minHeight: '385px',
+		padding: '0 1em',
 		[theme.breakpoints.down('sm')]: {
 			width: '90%',
 			minHeight: '230px',

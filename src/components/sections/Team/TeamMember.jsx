@@ -22,7 +22,7 @@ const TeamMember = ({ dataMember }) => {
 					</div>
 				</Grid>
 			</Grid>
-			<Grid alignItems="flex-end" container justify="center">
+			<Grid container justify="center">
 				<Grid item md={5}>
 					<div className={classes.card}>
 						<div className={`${classes.containerImageSection}`}>
