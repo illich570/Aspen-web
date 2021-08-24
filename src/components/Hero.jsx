@@ -10,7 +10,7 @@ const Hero = ({ dataHero }) => {
 				className={classes.image}
 				layout="fill"
 				objectFit="cover"
-				objectPosition="bottom"
+				objectPosition="top"
 				src={dataHero.background.url}
 			/>
 			<div className={classes.containerHero}>
