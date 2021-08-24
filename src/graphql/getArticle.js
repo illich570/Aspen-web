@@ -3,6 +3,7 @@ query Article($slug: String!){
   article(where :{url : $slug}){
     id
     title
+    order
     image{
       url
     }

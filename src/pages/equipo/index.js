@@ -25,5 +25,6 @@ export async function getStaticProps() {
 			teamSections,
 			logoSections,
 		},
+		revalidate: 60 * 2,
 	}
 }

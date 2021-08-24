@@ -27,5 +27,6 @@ export async function getStaticProps() {
 			footerSections,
 			logoSections,
 		},
+		revalidate: 60 * 2,
 	}
 }

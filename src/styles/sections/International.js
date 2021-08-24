@@ -83,8 +83,7 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		justifyContent: 'center',
 	},
-	containerImage: {
-	},
+	containerImage: {},
 }))
 
 export default useStyles

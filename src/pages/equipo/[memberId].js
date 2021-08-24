@@ -16,14 +16,15 @@ export default Member
 export const getStaticPaths = async () => {
 	const { teamMembers } = await GraphClient.request(getAllMembersSlug)
 	return {
-		paths: teamMembers.map((element) => ({ params: { slug: element.slug } })),
+		paths: teamMembers.map((_, index) => ({ params: { memberId: String.toString(index + 1) } })),
 		fallback: 'blocking',
 	}
 }
 
 export const getStaticProps = async ({ params }) => {
-	const slug = params.slug
-	const data = await GraphClient.request(getMember, { slug })
+	const memberId = parseInt(params.memberId) - 1 //consultar el actual
+	const count = parseInt(params.memberId) //consultar el siguiente
+	const data = await GraphClient.request(getMember, { memberId, count })
 	const { routesNavbars } = await GraphClient.request(getAllRoutes)
 	const { logoSections } = await GraphClient.request(getAllLogos)
 
@@ -33,7 +34,7 @@ export const getStaticProps = async ({ params }) => {
 		}
 	}
 	return {
-		props: { teamMember: data, routesNavbars, logoSections },
+		props: { teamMember: { ...data, count }, routesNavbars, logoSections, count },
 		revalidate: 60 * 2, // Cache response for 1 hour (60 seconds * 60 minutes)
 	}
 }

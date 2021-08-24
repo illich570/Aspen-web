@@ -5,7 +5,8 @@ import ButtonArrowNext from '@/components/ButtonArrowNext'
 import useStyles from '@/styles/sections/Present/PresentPostLayout'
 import Link from 'next/link'
 const PresentPostLayout = ({ dataArticle }) => {
-	const { article, articles, presentSections } = dataArticle
+	const { article, articles, presentSections, dataNextArticle } = dataArticle
+
 	const classes = useStyles()
 	return (
 		<main className={classes.container}>
@@ -50,13 +51,15 @@ const PresentPostLayout = ({ dataArticle }) => {
 									dangerouslySetInnerHTML={{ __html: article.noteContent.html }}
 								/>
 							) : null}
-							<div className={classes.containerButton}>
-								<div className={classes.button}>
-									<Link href={`/actualidad/${articles[1].url}`} passHref>
-										<ButtonArrowNext title="Siguiente articulo" />
-									</Link>
+							{dataNextArticle.articles.length > 0 ? (
+								<div className={classes.containerButton}>
+									<div className={classes.button}>
+										<Link href={`/actualidad/${dataNextArticle.articles[0].url}`} passHref>
+											<ButtonArrowNext title="Siguiente articulo" />
+										</Link>
+									</div>
 								</div>
-							</div>
+							) : null}
 						</article>
 					</Grid>
 				</Grid>
@@ -97,13 +100,15 @@ const PresentPostLayout = ({ dataArticle }) => {
 									dangerouslySetInnerHTML={{ __html: article.noteContent.html }}
 								/>
 							) : null}
-							<div className={classes.containerButton}>
-								<div className={classes.button}>
-									<Link href={`/actualidad/${articles[0].url}`} passHref>
-										<ButtonArrowNext title="Siguiente articulo" />
-									</Link>
+							{dataNextArticle.articles.length > 0 ? (
+								<div className={classes.containerButton}>
+									<div className={classes.button}>
+										<Link href={`/actualidad/${dataNextArticle.articles[0].url}`} passHref>
+											<ButtonArrowNext title="Siguiente articulo" />
+										</Link>
+									</div>
 								</div>
-							</div>
+							) : null}
 						</article>
 					</Grid>
 					<Grid item md={12} style={{ width: '100%' }}>

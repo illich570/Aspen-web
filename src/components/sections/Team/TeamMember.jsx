@@ -4,7 +4,7 @@ import useStyles from '@/styles/sections/Team/TeamMember'
 import Link from 'next/link'
 
 const TeamMember = ({ dataMember }) => {
-	const { teamMember, teamMembers, teamSections } = dataMember
+	const { teamMember, teamMembers, teamSections, count } = dataMember
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>
@@ -26,28 +26,34 @@ const TeamMember = ({ dataMember }) => {
 				<Grid item md={5}>
 					<div className={classes.card}>
 						<div className={`${classes.containerImageSection}`}>
-							<img alt={teamMember.name} className={classes.image} src={teamMember.image.url} />
+							<img
+								alt={teamMember[0].name}
+								className={classes.image}
+								src={teamMember[0].image.url}
+							/>
 						</div>
 						<div className={classes.memberNameRow}>
-							<h3 className={classes.nameMember}>{teamMember.name}</h3>
-							<h3 className={classes.emailMember}>{teamMember.email}</h3>
+							<h3 className={classes.nameMember}>{teamMember[0].name}</h3>
+							<h3 className={classes.emailMember}>{teamMember[0].email}</h3>
 						</div>
-						<p className={classes.memberInfo}>{teamMember.description}</p>
+						<p className={classes.memberInfo}>{teamMember[0].description}</p>
 					</div>
 				</Grid>
 				<Grid item md={7}>
 					<div
 						className={classes.paragraph}
-						dangerouslySetInnerHTML={{ __html: teamMember.resume.html }}
+						dangerouslySetInnerHTML={{ __html: teamMember[0].resume.html }}
 					></div>
 				</Grid>
-				<div className={classes.containerButton}>
-					<div className={classes.button}>
-						<Link href={`/equipo/${teamMembers[1].slug}`} passHref>
-							<ButtonArrowNext filled title="Siguiente integrante" />
-						</Link>
+				{teamMembers.length > 0 ? (
+					<div className={classes.containerButton}>
+						<div className={classes.button}>
+							<Link href={`/equipo/${count + 1}`} passHref>
+								<ButtonArrowNext filled title="Siguiente integrante" />
+							</Link>
+						</div>
 					</div>
-				</div>
+				) : null}
 			</Grid>
 		</div>
 	)

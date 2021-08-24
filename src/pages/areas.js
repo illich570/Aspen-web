@@ -24,5 +24,6 @@ export async function getStaticProps() {
 			routesNavbars,
 			logoSections,
 		},
+		revalidate: 60 * 2,
 	}
 }

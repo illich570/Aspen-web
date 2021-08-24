@@ -101,9 +101,9 @@ const useStyles = makeStyles((theme) => ({
 			marginTop: '2em',
 		},
 	},
-	lastContainerTeam:{
-		marginTop: '8em'
-	}
+	lastContainerTeam: {
+		marginTop: '8em',
+	},
 }))
 
 export default useStyles

@@ -1,6 +1,6 @@
 const getArticle = `
-query TeamMember($slug: String!){
-  teamMember(where :{slug : $slug}){
+query TeamMember($memberId: Int!, $count : Int!){
+  teamMember: teamMembers(first: 1, skip: $memberId, orderBy: order_ASC){
     id
     name
     email
@@ -12,7 +12,7 @@ query TeamMember($slug: String!){
       url
     }
   }
-  teamMembers(where: {slug_not : $slug}, skip: 1){
+  teamMembers(first: 1, skip: $count, orderBy: order_ASC){
     slug
   }
   teamSections(first: 1){
