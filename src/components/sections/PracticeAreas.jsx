@@ -10,8 +10,6 @@ const PracticeAreas = ({ dataAreas, dataAreaSection }) => {
 
 	const handleSelectedList = (selected) => {
 		const result = dataAreas.find((element) => element.id === selected)
-		//eslint-disable-next-line
-		console.log(result)
 		setSelectedList(result)
 		setIsFade(false)
 	}

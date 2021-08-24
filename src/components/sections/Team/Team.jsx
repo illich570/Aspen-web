@@ -19,9 +19,9 @@ const Team = ({ dataConsultant, dataTeam, dataSection }) => {
 				<Grid className={classes.containerSectionTeam} item md={12}>
 					<section>
 						<div className={classes.sectionTeam}>
-							{dataTeam.map((element, index) => (
+							{dataTeam.map((element) => (
 								<div className={classes.containerTeam} key={element.id}>
-									<Link href={`/equipo/${index + 1}`} passHref>
+									<Link href={`/equipo/${element.slug}`} passHref>
 										<a style={{ display: 'contents' }}>
 											<div className={`${classes.containerImageSection}`}>
 												<img alt={element.name} className={classes.image} src={element.image.url} />

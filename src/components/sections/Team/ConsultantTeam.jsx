@@ -2,8 +2,6 @@ import { Grid } from '@material-ui/core'
 import useStyles from '@/styles/sections/Team/ConsultantTeam'
 
 const ConsultantTeam = ({ dataTeam, dataSection }) => {
-	//eslint-disable-next-line
-	console.log(dataTeam)
 	const classes = useStyles()
 	return (
 		<div className={classes.container}>

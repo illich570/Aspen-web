@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import TeamMember from '@/components/sections/Team/TeamMember'
 import { GraphClient } from '@/lib'
-import { getAllMembersSlug, getMember, getAllRoutes, getAllLogos } from '@/graphql'
+import { getAllMembersSlug, getMember, getAllRoutes, getAllLogos, getNextMember } from '@/graphql'
 
 const Member = ({ teamMember, routesNavbars, logoSections }) => {
 	return (
@@ -16,25 +16,30 @@ export default Member
 export const getStaticPaths = async () => {
 	const { teamMembers } = await GraphClient.request(getAllMembersSlug)
 	return {
-		paths: teamMembers.map((_, index) => ({ params: { memberId: String.toString(index + 1) } })),
+		paths: teamMembers.map((element) => ({ params: { slug: element.slug   } })),
 		fallback: 'blocking',
 	}
 }
 
 export const getStaticProps = async ({ params }) => {
-	const memberId = parseInt(params.memberId) - 1 //consultar el actual
-	const count = parseInt(params.memberId) //consultar el siguiente
-	const data = await GraphClient.request(getMember, { memberId, count })
-	const { routesNavbars } = await GraphClient.request(getAllRoutes)
-	const { logoSections } = await GraphClient.request(getAllLogos)
+	const slug = params.slug
+	const data = await GraphClient.request(getMember, { slug})
 
 	if (!data.teamMember) {
 		return {
 			notFound: true,
 		}
 	}
+	//eslint-disable-next-line
+
+	const order = data.teamMember.order
+	const dataNextMember = await GraphClient.request(getNextMember, { order})
+	const { routesNavbars } = await GraphClient.request(getAllRoutes)
+	const { logoSections } = await GraphClient.request(getAllLogos)
+
+
 	return {
-		props: { teamMember: { ...data, count }, routesNavbars, logoSections, count },
+		props: { teamMember: { ...data, ...dataNextMember}, routesNavbars, logoSections},
 		revalidate: 60 * 2, // Cache response for 1 hour (60 seconds * 60 minutes)
 	}
 }

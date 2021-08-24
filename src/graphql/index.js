@@ -14,6 +14,7 @@ import getFooterSection from './getFooterSection'
 import getContactData from './getContactData'
 import getAllLogos from './getAllLogos'
 import getNextArticle from './getNextArticle'
+import getNextMember from './getNextMember'
 
 export {
 	getAllHomeSlides,
@@ -32,4 +33,5 @@ export {
 	getContactData,
 	getAllLogos,
 	getNextArticle,
+	getNextMember
 }
