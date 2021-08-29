@@ -7,10 +7,6 @@ function checkActive(routerRef, href) {
 	console.log(routerRef)
 	//eslint-disable-next-line
 	console.log(href)
-	//eslint-disable-next-line
-	console.log(routerRef === href)
-	//eslint-disable-next-line
-	console.log('hola')
 	return routerRef === href
 }
 
@@ -18,6 +14,8 @@ const LinkActive = ({ href, title }) => {
 	const classes = useStyles()
 	const router = useRouter()
 	const isActive = checkActive(router.asPath, href)
+	//eslint-disable-next-line
+	console.log(isActive)
 	return (
 		<Link href={href}>
 			<a className={`${classes.link} ${isActive ? classes.linkActive : ''}`}>{title}</a>
