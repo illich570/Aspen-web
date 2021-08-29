@@ -3,6 +3,12 @@ import { useRouter } from 'next/router'
 import useStyles from '@/styles/Navbar/LinkActive'
 
 function checkActive(routerRef, href) {
+	//eslint-disable-next-line
+	console.log(routerRef)
+	//eslint-disable-next-line
+	console.log(href)
+	//eslint-disable-next-line
+	console.log(routerRef === href)
 	return routerRef === href
 }
 
