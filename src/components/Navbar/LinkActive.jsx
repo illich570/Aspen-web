@@ -9,6 +9,8 @@ function checkActive(routerRef, href) {
 	console.log(href)
 	//eslint-disable-next-line
 	console.log(routerRef === href)
+	//eslint-disable-next-line
+	console.log('hola')
 	return routerRef === href
 }
 
