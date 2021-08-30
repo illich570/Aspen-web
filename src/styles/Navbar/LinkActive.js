@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '0.85rem',
 		color: ' #565656',
 		textDecoration: 'none',
+		'@media (max-width: 1170px) and (min-width: 960px)': {
+			fontSize: '0.65rem',
+		},
 	},
 	linkActive: {
 		color: theme.palette.primary.main,
