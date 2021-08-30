@@ -100,6 +100,7 @@ const useStyles = makeStyles((theme) => ({
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
+		textAlign: 'justify',
 		[theme.breakpoints.down('sm')]: {
 			textAlign: 'center',
 			color: '#fff',

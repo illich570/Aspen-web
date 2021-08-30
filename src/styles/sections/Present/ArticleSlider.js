@@ -5,6 +5,9 @@ const useStyles = makeStyles((theme) => ({
 		width: '80%',
 		margin: '0 auto',
 		position: 'relative',
+		[theme.breakpoints.down('sm')]: {
+			minWidth: '250px'
+		},
 	},
 	title: {
 		position: 'absolute',

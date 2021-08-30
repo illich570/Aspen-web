@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
 		fontSize: '0.9em',
+		textAlign: 'justify',
 		'& > p': {
 			marginBottom: '1em',
 		},

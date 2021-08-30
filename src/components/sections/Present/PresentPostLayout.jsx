@@ -31,7 +31,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 								/>
 							</div>
 							<div className={classes.paragraphInterest}>
-								<p>Articulos que podrian ser de tu interes</p>
+								<p>Artículos que podrían ser de su interés</p>
 							</div>
 							<ArticleSlider dataArticles={articles} />
 						</aside>
@@ -55,7 +55,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 								<div className={classes.containerButton}>
 									<div className={classes.button}>
 										<Link href={`/actualidad/${dataNextArticle.articles[0].url}`} passHref>
-											<ButtonArrowNext title="Siguiente articulo" />
+											<ButtonArrowNext title="Siguiente artículo" />
 										</Link>
 									</div>
 								</div>
@@ -104,7 +104,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 								<div className={classes.containerButton}>
 									<div className={classes.button}>
 										<Link href={`/actualidad/${dataNextArticle.articles[0].url}`} passHref>
-											<ButtonArrowNext title="Siguiente articulo" />
+											<ButtonArrowNext title="Siguiente artículo" />
 										</Link>
 									</div>
 								</div>
@@ -113,7 +113,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 					</Grid>
 					<Grid item md={12} style={{ width: '100%' }}>
 						<div className={classes.paragraphInterest}>
-							<p>Articulos que podrian ser de tu interes</p>
+							<p>Artículos que podrían ser de su interés</p>
 						</div>
 						<div>
 							<ArticleSlider dataArticles={articles} />

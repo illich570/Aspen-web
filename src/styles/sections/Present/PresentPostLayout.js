@@ -81,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	richText: {
+		textAlign: 'justify',
 		'& > p': {
 			marginBottom: '1em',
 		},

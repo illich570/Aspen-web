@@ -1,6 +1,7 @@
 import useStyles from '@/styles/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Hidden } from '@material-ui/core'
 
 const Footer = ({ routes, dataFooter, logos }) => {
 	const actualDate = new Date().getFullYear()
@@ -8,9 +9,11 @@ const Footer = ({ routes, dataFooter, logos }) => {
 	const data = dataFooter[0]
 	return (
 		<footer className={classes.container}>
-			<div className={classes.containerLogo}>
-				<Image alt="Aspen legal" height={100} src={logos[0].logo.url} width={100} />
-			</div>
+			<Hidden implementation="css" smDown>
+				<div className={classes.containerLogo}>
+					<Image alt="Aspen legal" height={100} src={logos[0].logo.url} width={100} />
+				</div>
+			</Hidden>
 			<div className={classes.rowLinks}>
 				{routes.map((route) => (
 					<Link href={route.route} key={route.id} passHref>

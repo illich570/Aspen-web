@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	containerSection: {
 		width: '100%',
-		marginTop: '5em',
+		marginTop: '2em',
 		[theme.breakpoints.down('xs')]: {
 			marginTop: '2em',
 		},
@@ -139,6 +139,7 @@ const useStyles = makeStyles((theme) => ({
 	paragraphSection: {
 		letterSpacing: '0.06em',
 		marginBottom: '2em',
+		textAlign: 'justify',
 		'& > p': {
 			'&:not(:last-child)': {
 				marginBottom: '0.7em',
