@@ -58,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		color: '#565656',
 		letterSpacing: '0.07em',
+		textAlign: 'justify'
 	},
 	paragraph: {
 		letterSpacing: '0.07em',
@@ -106,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	richText: {
+		textAlign: 'justify',
 		'& > p': {
 			marginBottom: '1em',
 		},

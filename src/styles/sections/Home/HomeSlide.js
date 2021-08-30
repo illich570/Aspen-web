@@ -67,6 +67,13 @@ const useStyles = makeStyles((theme) => ({
 	containerText: {
 		marginTop: '5em',
 		marginBottom: '2.5em',
+		[theme.breakpoints.down('sm')]: {
+			padding: '1em 2em',
+			backdropFilter: 'blur(10px)',
+			WebkitBackdropFilter: 'blur(10px)',
+			borderRadius: '15px',
+			backgroundColor: 'rgba(255, 255, 255, 0.17)',
+		},
 	},
 	containerInfo: {
 		display: 'flex',
@@ -96,15 +103,21 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: '4em',
 			textAlign: 'center',
 		},
+		'@media (max-width: 365px)': {
+			fontSize: '2.8em'
+		},
 	},
 	paragraph: {
 		letterSpacing: '0.02em',
 		lineHeight: '25px',
 		textAlign: 'justify',
 		[theme.breakpoints.down('sm')]: {
-			textAlign: 'center',
+			textAlign: 'justify',
 			color: '#fff',
 			textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
+		},
+		'@media (max-width: 365px)': {
+			fontSize: '0.85em'
 		},
 	},
 	containerArrow: {

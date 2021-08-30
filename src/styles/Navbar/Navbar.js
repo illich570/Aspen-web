@@ -11,6 +11,9 @@ const useStyles = makeStyles(() => ({
 	},
 	button: {
 		textTransform: 'capitalize',
+		'@media (max-width: 1170px) and (min-width: 960px)': {
+			fontSize: '0.65rem',
+		},
 	},
 	containerNavbar: {
 		marginTop: '2em',

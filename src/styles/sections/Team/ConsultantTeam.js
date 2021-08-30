@@ -94,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
 		color: '#666',
 		marginTop: '1em',
 		fontSize: '0.95em',
+		textAlign: 'justify',
 	},
 	infoMember: {
 		color: '#666',
@@ -101,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '30px',
 		letterSpacing: '0.1em',
 		fontSize: '0.9em',
+		textAlign: 'justify',
 		'& > p': {
 			marginBottom: '1em',
 		},

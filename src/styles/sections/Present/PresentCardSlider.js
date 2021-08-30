@@ -35,10 +35,11 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: '385px',
 		padding: '0 1em',
 		[theme.breakpoints.down('sm')]: {
-			width: '90%',
+			width: '80%',
 			minHeight: '230px',
 			margin: '0 auto',
 			fontSize: '0.85em',
+			minWidth: '220px',
 		},
 		[theme.breakpoints.down('xs')]: {
 			minHeight: '350px',

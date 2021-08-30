@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
 		lineHeight: '30px',
 		color: '#666',
 		minHeight: '350px',
+		textAlign: 'justify',
 		'& > p': {
 			marginBottom: '1em',
 		},
@@ -137,6 +138,7 @@ const useStyles = makeStyles((theme) => ({
 		color: '#666',
 		marginTop: '1em',
 		lineHeight: '30px',
+		textAlign: 'justify'
 	},
 }))
 
