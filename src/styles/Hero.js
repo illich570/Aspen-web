@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	image: {
 		zIndex: 0,
+		filter: 'blur(1.5px) brightness(75%)',
 	},
 	containerHero: {
 		position: 'relative',
