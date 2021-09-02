@@ -11,6 +11,7 @@ const LinkActive = ({ href, title }) => {
 	const [isActive,setIsActive] = useState();
 	const classes = useStyles()
 	const router = useRouter()
+	
 
 	useEffect(()=>{
 		setIsActive(checkActive(router.pathname, href))

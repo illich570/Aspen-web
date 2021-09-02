@@ -23,7 +23,7 @@ const TeamMember = ({ dataMember }) => {
 				</Grid>
 			</Grid>
 			<Grid container justify="center">
-				<Grid item md={5}>
+				<Grid item lg={5} md={6}>
 					<div className={classes.card}>
 						<div className={`${classes.containerImageSection}`}>
 							<img
@@ -39,7 +39,7 @@ const TeamMember = ({ dataMember }) => {
 						<p className={classes.memberInfo}>{teamMember.description}</p>
 					</div>
 				</Grid>
-				<Grid item md={7}>
+				<Grid item lg={7} md={6}>
 					<div
 						className={classes.paragraph}
 						dangerouslySetInnerHTML={{ __html: teamMember.resume.html }}

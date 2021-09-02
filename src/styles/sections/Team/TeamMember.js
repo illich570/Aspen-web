@@ -90,7 +90,12 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'flex-end',
 		flexDirection: 'column',
 		alignItems: 'flex-end',
+		paddingLeft: '5%',
+		'@media (min-width: 1360px)': {
+			paddingLeft: '15%',
+		},
 		[theme.breakpoints.down('sm')]: {
+			paddingLeft: '0',
 			justifyContent: 'center',
 			alignItems: 'center',
 		},
@@ -106,15 +111,15 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '0.3em',
 	},
 	containerImageSection: {
-		width: '140px',
-		height: '140px',
+		width: '130px',
+		height: '130px',
 		background: 'white',
 		borderRadius: '50%',
 		boxShadow: '-2px 4px 17px rgba(0, 0, 0, 0.16)',
 		position: 'absolute',
 		top: '-60px',
 		left: '-60px',
-		'@media (max-width: 1360px)': {
+		'@media (max-width: 1370px)': {
 			width: '110px',
 			height: '110px',
 		},

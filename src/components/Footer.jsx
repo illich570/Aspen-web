@@ -38,6 +38,9 @@ const Footer = ({ routes, dataFooter, logos }) => {
 					<Image alt="Banana Design" height={100} src={data.designLogo.url} width={150} />
 				</div>
 			) : null}
+			<div className={classes.containerRow}>
+				<h4>Prodigitech</h4>
+			</div>
 		</footer>
 	)
 }

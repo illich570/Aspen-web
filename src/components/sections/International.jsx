@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Grid } from '@material-ui/core'
 import Image from 'next/image'
 import useStyles from '@/styles/sections/International'
@@ -5,6 +6,13 @@ import useStyles from '@/styles/sections/International'
 const International = ({ dataSection }) => {
 	const data = dataSection[0]
 	const classes = useStyles(data)
+
+
+	useEffect(() => {
+		const val = document.getElementById('text_editor').getElementsByTagName('a')
+		const arrayAnchor = [...val]
+		arrayAnchor.map(element => element.setAttribute('target','_blank'))
+	},[])
 	return (
 		<div className={classes.container}>
 			<div className={classes.glassBlur} />
@@ -21,6 +29,7 @@ const International = ({ dataSection }) => {
 							<div
 								className={classes.paragraph}
 								dangerouslySetInnerHTML={{ __html: data.content.html }}
+								id="text_editor"
 							/>
 						</div>
 					</Grid>

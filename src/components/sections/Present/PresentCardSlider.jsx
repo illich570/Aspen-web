@@ -10,20 +10,20 @@ const PresentCardSlider = ({ dataArticles }) => {
 	const [showSlider, setShowSlider] = useState(false)
 	const windowGlobal = typeof window !== 'undefined' && window
 
-	const handleShowSlider = () => {
-		setShowSlider(!showSlider)
-	}
-
 	useEffect(() => {
 		if (windowGlobal) {
-			window.addEventListener('load', handleShowSlider)
+			window.addEventListener('load', () => setShowSlider(true))
+			if(window.document.readyState === 'complete'){
+				setShowSlider(true)
+			}
 		}
 		return () => {
 			if (windowGlobal) {
-				window.removeEventListener('load', handleShowSlider)
+				window.removeEventListener('load', () => setShowSlider(true) )
 			}
 		}
-	})
+
+	},[windowGlobal])
 	return (
 		<section className={classes.container}>
 			<div className={classes.containerSlider}>
