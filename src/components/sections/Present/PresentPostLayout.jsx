@@ -65,7 +65,7 @@ const PresentPostLayout = ({ dataArticle }) => {
 				</Grid>
 			</Hidden>
 			<Hidden implementation="css" mdUp>
-				<Grid container>
+				<Grid className={classes.containerTitle} container>
 					<Grid item md={3}>
 						<div className={classes.imageMobile}>
 							<Image alt="" height={42} src={presentSections[0].iconArticle.url} width={42} />

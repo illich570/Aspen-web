@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.13em',
 		fontWeight: 'bold',
 		fontSize: '1.2em',
-		paddingRight: '3em',
+		paddingRight: '1.5em',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '1em',
 		},
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: '1em 0',
 	},
 	containerSlider: {
-		width: '80%',
+		width: '75%',
 	},
 	containerImage: {
 		width: '100%',
@@ -30,19 +30,16 @@ const useStyles = makeStyles((theme) => ({
 	containerCard: {
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'space-around',
-		width: '100%',
+		justifyContent: 'space-between',
 		minHeight: '385px',
+		maxWidth: '300px',
 		padding: '0 1em',
+		margin: '0 auto',
 		[theme.breakpoints.down('sm')]: {
 			width: '80%',
-			minHeight: '230px',
-			margin: '0 auto',
+			minHeight: '290px',
 			fontSize: '0.85em',
 			minWidth: '220px',
-		},
-		[theme.breakpoints.down('xs')]: {
-			minHeight: '350px',
 		},
 	},
 	button: {

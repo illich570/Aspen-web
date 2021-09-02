@@ -2,9 +2,16 @@ import Slider from 'react-slick'
 import ArrowSlider from '@/components/ArrowSlider'
 
 export default function SliderCard({ children, slidesToShow, dots }) {
+	const checkSlides = (slidesToShow) => {
+		if(slidesToShow){
+			return slidesToShow < 4 ? slidesToShow : 4
+		}else{
+			return 4
+		}
+	}
 	const settings = {
 		dots: dots !== undefined ? dots : true,
-		slidesToShow: slidesToShow ? slidesToShow : 4,
+		slidesToShow: checkSlides(slidesToShow) ,
 		prevArrow: <ArrowSlider />,
 		nextArrow: <ArrowSlider isRight />,
 		pauseOnDotsHover: true,
@@ -13,14 +20,14 @@ export default function SliderCard({ children, slidesToShow, dots }) {
 			{
 				breakpoint: 960,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: checkSlides(slidesToShow),
 					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 760,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: checkSlides(slidesToShow),
 					slidesToScroll: 1,
 				},
 			},

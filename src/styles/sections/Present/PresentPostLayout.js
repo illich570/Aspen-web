@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		[theme.breakpoints.down('sm')]: {
 			width: '100%',
-			padding: '0 4.5em',
+			padding: '0 3.5em',
 		},
 	},
 	title: {
@@ -31,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		display: 'flex',
 		flexDirection: 'row',
+		[theme.breakpoints.down('sm')]: {
+			marginBottom:'1.5em',
+			justifyContent: 'center',
+			paddingRight: '1em'
+		},
 	},
 	containerPost: {
 		width: '100%',
@@ -52,6 +57,9 @@ const useStyles = makeStyles((theme) => ({
 		letterSpacing: '0.03em',
 		fontWeight: 'bold',
 		color: '#6e6e6e',
+		[theme.breakpoints.down('md')]: {
+			width: '60%',
+		},
 		[theme.breakpoints.down('sm')]: {
 			width: '100%',
 		},
@@ -60,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
 		color: theme.palette.primary.main,
 	},
 	spaceTitle: {
-		marginBottom: '1.5em',
+		margin: '1.5em 0',
 	},
 	spaceArticles: {
 		marginTop: '4em',

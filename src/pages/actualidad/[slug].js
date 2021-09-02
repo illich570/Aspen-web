@@ -41,6 +41,6 @@ export const getStaticProps = async ({ params }) => {
 	}
 	return {
 		props: { article: { ...data, dataNextArticle }, routesNavbars, logoSections },
-		revalidate: 60 * 2, // Cache response for 1 hour (60 seconds * 60 minutes)
+		revalidate: 60 * 2,
 	}
 }

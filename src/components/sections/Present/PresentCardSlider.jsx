@@ -9,6 +9,7 @@ const PresentCardSlider = ({ dataArticles }) => {
 	const classes = useStyles()
 	const [showSlider, setShowSlider] = useState(false)
 	const windowGlobal = typeof window !== 'undefined' && window
+	const lengthArticles = dataArticles.length;
 
 	useEffect(() => {
 		if (windowGlobal) {
@@ -28,7 +29,7 @@ const PresentCardSlider = ({ dataArticles }) => {
 		<section className={classes.container}>
 			<div className={classes.containerSlider}>
 				{showSlider ? (
-					<Slider dots={false}>
+					<Slider dots={false} slidesToShow={lengthArticles}>
 						{dataArticles.map((element) => (
 							<article key={element.id}>
 								<div className={classes.containerCard}>
