@@ -67,12 +67,12 @@ const Navbar = ({ blackColor, routes, logos }) => {
 			<Grid className={classes.containerNavbar} container justify="center">
 				<Grid item md={2} xs={6}>
 					<div className={classes.container}>
-						<Image alt="Justicia" height={60} src={logoUrl} width={100} />
+						<Image alt="Aspen Legal" height={60} src={logoUrl} width={100} />
 					</div>
 				</Grid>
 				<Grid item md={10} xs={6}>
 					<Hidden implementation="css" smDown>
-						<Grid container>
+						<Grid container justify="space-between">
 							<RoutesNavbar routes={routes} />
 							<Grid className={classes.container} item md={2}>
 								<div className={classes.container}>

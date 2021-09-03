@@ -18,14 +18,14 @@ export default function SliderCard({ children, slidesToShow, dots }) {
 		pauseOnFocus: true,
 		responsive: [
 			{
-				breakpoint: 960,
+				breakpoint: 1420,
 				settings: {
 					slidesToShow: checkSlides(slidesToShow, 3),
 					slidesToScroll: 1,
 				},
 			},
 			{
-				breakpoint: 760,
+				breakpoint: 790,
 				settings: {
 					slidesToShow: checkSlides(slidesToShow, 2),
 					slidesToScroll: 1,
