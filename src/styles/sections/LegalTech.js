@@ -65,12 +65,9 @@ const useStyles = makeStyles((theme) => ({
 		color: '#707070',
 	},
 	list: {
-		width: '35%',
+		width: '80%',
 		marginLeft: '2em',
 		marginTop: '2.5em',
-		[theme.breakpoints.down('sm')]: {
-			width: '80%',
-		},
 	},
 	listItem: {
 		marginBottom: '2em',

@@ -14,17 +14,26 @@ const CardSlider = ({ dataArticles }) => {
 					<div className={classes.containerSlider}>
 						<Slider dots={false} slidesToShow={lengthArticles}>
 							{dataArticles.map((element) => (
-								<Link href={`/actualidad/${element.url}`} key={`card_${element.title}`} passHref>
-									<a>
-										<div className={classes.containerImage}>
-											<Image  alt={element.title}  className={classes.image} height={100} src={element.image.url} width={100} />
-											<div className={classes.containerTitle}>
-												<h5 className={classes.title}>{element.title}</h5>
-											</div>
-											
-										</div>
-									</a>
-								</Link>
+								<div key={`card_${element.title}`}>
+									<div className={classes.containerArticle}>
+										<Link href={`/actualidad/${element.url}`} passHref>
+											<a>
+												<div className={classes.containerImage}>
+													<Image
+														alt={element.title}
+														className={classes.image}
+														height={100}
+														src={element.image.url}
+														width={100}
+													/>
+													<div className={classes.containerTitle}>
+														<h5 className={classes.title}>{element.title}</h5>
+													</div>
+												</div>
+											</a>
+										</Link>
+									</div>
+								</div>
 							))}
 						</Slider>
 					</div>
@@ -41,12 +50,13 @@ const CardSlider = ({ dataArticles }) => {
 											<div className={classes.containerImage}>
 												<Image
 													alt={element.title}
+													className={classes.image}
 													height={100}
 													src={element.image.url}
 													width={100}
 												/>
 												<div className={classes.containerTitle}>
-												<h5 className={classes.title}>{element.title}</h5>
+													<h5 className={classes.title}>{element.title}</h5>
 												</div>
 											</div>
 										</a>

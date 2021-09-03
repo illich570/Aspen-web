@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
 	containerImage: {
 		margin: '0 auto',
-		minWidth: '275px',
+		maxWidth: '100px',
+		maxHeight: '100px'
 	},
 	image:{
 		filter: 'blur(1px) brightness(75%)',
@@ -11,9 +12,11 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		fontSize: '0.7em',
 		color: 'white',
-		[theme.breakpoints.down('sm')]: {
-			color: '#000',
-		},
+	},
+	containerArticle:{
+		maxWidth: '100px',
+		maxHeight: '100px',
+		position:'relative'
 	},
 	containerTitle:{
 		width: '80px',
@@ -21,11 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		top: '5px',
 		left: '10px',
 		[theme.breakpoints.down('sm')]: {
-			left: '0',
-			position: 'relative',
-			color: '#000',
-			marginBottom: '1em',
-			width: '40%',
+			left: '38%',
 		},
 	},
 	container: {
@@ -41,12 +40,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 	imageMobile: {
 		position: 'relative',
-		width: '100%',
 		marginRight: '1.5em',
 	},
 	containerCardSlider: {
 		display: 'flex',
 		justifyContent: 'center',
+		position:'relative'
 	},
 }))
 
