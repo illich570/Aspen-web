@@ -44,7 +44,7 @@ const useStyles = makeStyles(() => ({
 		padding: '0.75em 0',
 		justifyContent: 'center',
 		'&:not(:last-child)': {
-			borderBottom: '2px solid gray',
+			borderBottom: '1px solid gray',
 		},
 	},
 }))

@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 		background: 'transparent',
 		backdropFilter: 'blur(25px)',
 		WebkitBackdropFilter: 'blur(25px)',
-		backgroundColor: 'rgba(255, 255, 255, 0.17)',
+		backgroundColor: 'rgba(255, 255, 255, 0.35)',
 		top: '-25%',
 		right: '-29%',
 		[theme.breakpoints.down('sm')]: {
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 			backdropFilter: 'blur(10px)',
 			WebkitBackdropFilter: 'blur(10px)',
 			borderRadius: '15px',
-			backgroundColor: 'rgba(255, 255, 255, 0.17)',
+			backgroundColor: 'rgba(255, 255, 255, 0.35)',
 		},
 	},
 	containerInfo: {
@@ -113,7 +113,6 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'justify',
 		[theme.breakpoints.down('sm')]: {
 			textAlign: 'justify',
-			color: '#fff',
 			textShadow: '-4px 5px 11px rgba(0, 0, 0, 0.16)',
 		},
 		'@media (max-width: 365px)': {

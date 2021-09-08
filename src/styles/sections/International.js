@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 		background: 'transparent',
 		backdropFilter: 'blur(25px)',
 		WebkitBackdropFilter: 'blur(25px)',
-		backgroundColor: 'rgba(255, 255, 255, 0.17)',
+		backgroundColor: 'rgba(255, 255, 255, 0.35)',
 		top: '-15%',
 		right: '-29%',
 		[theme.breakpoints.down('sm')]: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 			backdropFilter: 'blur(10px)',
 			WebkitBackdropFilter: 'blur(10px)',
 			borderRadius: '15px',
-			backgroundColor: 'rgba(255, 255, 255, 0.17)',
+			backgroundColor: 'rgba(255, 255, 255, 0.35)',
 		},
 		
 		

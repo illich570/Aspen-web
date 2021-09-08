@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 	noBoxShadow: {
 		boxShadow: 'none',
 	},
@@ -8,6 +8,9 @@ const useStyles = makeStyles(() => ({
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'flex-start'
+		},
 	},
 	button: {
 		textTransform: 'capitalize',
@@ -17,6 +20,9 @@ const useStyles = makeStyles(() => ({
 	},
 	containerNavbar: {
 		marginTop: '2em',
+		[theme.breakpoints.down('sm')]: {
+			padding: '0 2em'
+		},
 	},
 	containerMobile: {
 		height: '100%',

@@ -104,7 +104,7 @@ const Navbar = ({ blackColor, routes, logos }) => {
 						</Grid>
 					</Hidden>
 					<Hidden implementation="css" mdUp>
-						<Grid container direction="row" justify="center">
+						<Grid container direction="row" justify="flex-end">
 							<IconButton color="primary" onClick={handleShowSidebar}>
 								<MenuIcon style={{ fontSize: '2em' }} />
 							</IconButton>
