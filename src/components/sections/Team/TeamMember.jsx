@@ -13,11 +13,15 @@ const TeamMember = ({ dataMember }) => {
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>
 							<div>
-								<h3 className={classes.title}>{teamSections[0].teamTitle}</h3>
+							<Link href="/equipo">
+									<a className={classes.title}>{teamSections[0].teamTitle}</a>
+								</Link>
 							</div>
 						</div>
 						<div>
-							<h3 className={classes.subtitle}>{teamSections[0].consultantsTitle}</h3>
+						<Link href="/equipo/consultores">
+									<a className={classes.subtitle}>{teamSections[0].consultantsTitle}</a>
+								</Link>
 						</div>
 					</div>
 				</Grid>

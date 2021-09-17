@@ -1,5 +1,6 @@
 import { Grid } from '@material-ui/core'
 import useStyles from '@/styles/sections/Team/ConsultantTeam'
+import Link from 'next/link'
 
 const ConsultantTeam = ({ dataTeam, dataSection }) => {
 	const classes = useStyles()
@@ -10,11 +11,15 @@ const ConsultantTeam = ({ dataTeam, dataSection }) => {
 					<div className={classes.containerTitle}>
 						<div className={classes.titleLogo}>
 							<div>
-								<h3 className={classes.title}>{dataSection[0].consultantsTitle}</h3>
+								<Link href="/equipo/consultores">
+									<a className={classes.title}>{dataSection[0].consultantsTitle}</a>
+								</Link>
 							</div>
 						</div>
 						<div>
-							<h3 className={classes.subtitle}>{dataSection[0].teamTitle}</h3>
+						<Link href="/equipo">
+									<a className={classes.subtitle}>{dataSection[0].teamTitle}</a>
+								</Link>
 						</div>
 					</div>
 				</Grid>
